@@ -1,4 +1,4 @@
-# Create the Crabs project
+# Create the Crabs tutorial
 
 Now we show you how to create the crabs tutorial from start to end.
 
