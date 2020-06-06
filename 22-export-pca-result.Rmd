@@ -1,0 +1,26 @@
+# Export PCA results
+
+In this section you export the results to a downloadable file. 
+
+
+Head over to the Crabs workflow.
+
+* Right click on the `PCA` step and choose `Add`
+
+* Select `Export'
+
+* Right click on the `Export` step and select `Run`
+
+<center><img src="images/Click_on_export_run.png"></center>\
+
+It has now been activated, showing a green status, exporting the data to "New Project" 
+
+* Go to the "Crabs project" page by clicking it on the top bar
+
+<center><img src="images/View_crabs_export_projectpage.png"></center>\
+
+* Refresh the browser page either using `F5` or the refresh icon on the browser
+
+The new `crabs workflow-Export` entry will appear.
+
+You can download the data by clicking the download icon beside it. It is also available as a __Tercen__ **Table** (i.e. data set) and can be used by other workflows.
