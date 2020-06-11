@@ -1,0 +1,33 @@
+# Gathering the PCA results
+
+In this section we perform a gathering of Principal components.
+
+* Go to the Crabs workflow
+
+* Right-click on `PCA` and select `Add`
+* Select `Gather`
+
+<center><img src="images/Click_on_gather_add.png"></center>\
+
+The `Gather` __step__ will appear on top of the `PC2vsPC3` __step__
+
+* Drag the `Gather` step to the right
+
+<center><img src="images/View_gather_moved.png"></center>\
+
+* Doubleclick on `Gather`
+* Enter "PCA" in the `Namespace`
+* Select all the Principal Components
+
+<center><img src="images/View_gathering_PCA.png"></center>\
+
+* Click on `Crabs workflow`
+* Right click on `Gather` and select run
+
+<center><img src="images/Click_on_run_gathering.png"></center>\
+
+* Save the workflow
+
+We have gathered Principal components. 
+
+In the upcoming sections we take a look at creating a pairwise plot of all the principle components.
