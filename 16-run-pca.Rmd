@@ -26,9 +26,6 @@ Continue in the projection we created in the previous chapter.
 
 * Go back to the crabs workflow page by clicking on it
 
-The data step is now presented:
-<center><img src="images/View_workflow_PCA_run.png"></center>\
-
 The operators in every step can also be activated from the workflow page by right clicking on the data step and selecting `Run`
 The the data step status is indicated by the color on the top right corner, red means not activated and green means activated.
 
@@ -37,7 +34,7 @@ The the data step status is indicated by the color on the top right corner, red 
 * Always name the steps descriptive to keep a clear workflow. 
 * Rename to "PCA" 
 
-<center><img src="images/PCA_name_renamed.png"></center>
+<center><img src="images/View_PCA_name_renamed.png"></center>
 
 The steps in the workflow can be dragged to your liking. Try to keep your workflow easily interpretable.
 

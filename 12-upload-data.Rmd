@@ -34,14 +34,14 @@ Factor|values
 
 Navigate to your crabs projects homepage. 
 
-* Click on `New data set`
+* Click on `New data set`\
+
 <center><img src="images/Click_on_new_dataset.png"></center>
-
-A dialog window opens which allows you to select the data file's location.
-
 \
+A dialog window opens which allows you to select the data file's location.\
+
 * Enter `Crab data` as the name for the data
-* Click on `Choose File` and select your file's location (i.e. "C:\\data\\papercrabs_longformat.csv").
+* Click on `Choose File` and select your file's location (i.e. "C:\\data\\papercrabs_longformat.csv").\
 
 <center><img src="images/View_add_dataset.png"></center>
 
@@ -58,6 +58,6 @@ You will see which column headers were detected and the detected data type.
 
 
 You will see the new data set in the projects homepage.
-<center><img src="images/View_Data_added.png"></center>
+<center><img src="images/View_data_added.png"></center>
 
 You have successfully uploaded data on to __Tercen__. In the next section you create a workflow for the analysis of the data.

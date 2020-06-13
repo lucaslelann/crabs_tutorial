@@ -7,7 +7,7 @@ In this section you create a pairwise visual of all Principal Components.
 * Rename `Data step`to `Pairwise PCA`
 
 
-<center><img src="images/View_add_pairwise_PCA_step.png"></center>\
+<center><img src="images/View_add_pairwise_PCA.png"></center>\
 
 * Doubleclick `Pairwise PCA`
 * Clear the projection so that it will be completely emtpy

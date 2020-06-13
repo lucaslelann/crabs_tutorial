@@ -58,3 +58,14 @@ for (image in Projection_images)
 scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("562x361") %>% image_border("blue", "1x1")
 newfilelocation <- str_remove(filelocation, "raw_projection_")
 image_write(scaled_cropped_bordered_img, newfilelocation)}
+
+###############################################################################################################################
+# Manually taken screenshots.
+
+Allman_images <- list.files('images', pattern = "man_")
+for (image in Allman_images)
+{filelocation <- paste("images\\",image, sep = "")
+scaled_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_border("blue", "1x1")
+newfilelocation <- str_remove(filelocation, "man_")
+image_write(scaled_bordered_img, newfilelocation)}
+

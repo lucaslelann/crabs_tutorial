@@ -18,7 +18,8 @@ You are now in the Crabs team home page.
 
 * Enter `Crabs project` in the `Name` tab
 
-* Provide a "Project description" in the `Description`
+* Provide a "Project description" in the `Description`\
+
 <center><img src="images/Give_name_description_to_project.png"></center>
 \
 * Click `OK`

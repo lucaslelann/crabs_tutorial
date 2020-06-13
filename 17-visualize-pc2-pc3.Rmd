@@ -1,12 +1,12 @@
-# Visualize PC1 vs. PC2
+# Visualize PC2 vs. PC3
 
 In this section we visualize the output of your PCA computation. The visualization uses two principal components in a pair-wise plot.
 
 * Right click on the data step "PCA" and select `Add` 
 
 * Select `Data step`
-
-A new projection page opens. 
+* Open the new `Data step`
+ 
 Looking at the factors on the left of your screen, you will notice there are additional factors in the factor list compared to last section, namely `ds0.PC1`, `ds0.PC2`, etc..
 
 <center><img src="images/View_PCA_results_default.png"></center>
