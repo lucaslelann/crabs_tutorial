@@ -3,7 +3,7 @@
 In this section you create a new team in __Tercen__.
 
 
-Once logged in you see your __personal page__, similar to the image below.
+Once logged in you see your __personal homepage__, similar to the image below.
 
 <center><img src="images/View_personal_page.png"></center>
 

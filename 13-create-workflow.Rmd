@@ -2,12 +2,11 @@
 In this section you create a workflow in your project area.
 
 * Go to the project homepage
-* Click on `New workflow`
+* Click on `New workflow`\
+
 <center><img src="images/Click_on_new_workflow.png"></center>\
 
 * Name the workflow "Crabs workflow"
-<center><img src="images/Name_workflow_Crabsworkflow.png"></center>\
-
 * Click `OK`
 
 <center><img src="images/View_workflow_empty.png"></center>
@@ -23,9 +22,7 @@ You now have an empty __workflow__ titled "Crabs workflow".
 
 <center><img src="images/Click_on_table.png"></center>\
 
-* Select the Crabs data
-<center><img src="images/Click_on_crabsdata_workflow.png"></center>\
-
+* Select the Crab data
 * Click on `OK`
 
 A box will appear in the workflow, we consider each box a __step__ in your data analysis process.

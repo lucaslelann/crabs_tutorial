@@ -1,0 +1,32 @@
+# Visualize a pairwise PCA
+In this section you create a pairwise visual of all Principal Components.
+
+* Click on the `Gather` data step and select `Add` 
+
+* Choose a `Data step`
+* Rename `Data step`to `Pairwise PCA`
+
+
+<center><img src="images/View_add_pairwise_PCA.png"></center>\
+
+* Doubleclick `Pairwise PCA`
+* Clear the projection so that it will be completely emtpy
+
+<center><img src="images/View_empty_pairwise_PCA.png"></center>\
+
+* Drag-n-drop the ``PCA.value`` factor to the _y-axis zone_
+* Drag-n-drop the ``PCA.variable`` factor to the _column zone_
+* Drag-n-drop the ``PCA.variable`` factor to the _row zone_
+* Drag-n-drop the ``observation`` factor to the _label zone_
+* Drag-n-drop the ``sp`` factor to the _Colors zone_
+* Drag-n-drop the ``sex`` factor to the _Colors zone_
+
+Re-size the image to make the projection viewable
+* Place the mouse on the row lines and drag them closer.
+* Place the mouse on the column lines and drag them closer.
+
+<center><img src="images/View_pairwise_PCA.png"></center>\
+
+* Save the workflow
+
+You have created a pairwise projection of all the Principal Components. Next you will create a multi-pairwise projection of the Crabs data.

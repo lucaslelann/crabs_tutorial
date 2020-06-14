@@ -1,8 +1,8 @@
 # Create the Crabs tutorial
 
-Now we show you how to create the crabs tutorial from start to end.
+In this tutorial you create the crabs tutorial from start to end.
 
-<center><img src="images/Create_project_crab.png"></center>
+<center><img src="images/View_crab_picture.png"></center>
 
 The following steps are covered in the next few chapters:
 
