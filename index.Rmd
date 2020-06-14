@@ -24,7 +24,7 @@ It is the easiest and quickest path to understanding the basics of __Tercen__.
 I would like to thank all the users for their feedback. It has helped us improve __Tercen__.
 
 * __Feedback__:
-If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/starters-guide/issues).
+If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/crabs_tutorial/issues).
 
 * __Motivation__:  
 __Tercen__  promotes collaboration for data analysis. Not everyone can code or even wants to,  but everyone should benefit from the explosion of data and code currently taking place.
