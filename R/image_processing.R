@@ -65,7 +65,7 @@ library(stringr)
 Allman_images <- list.files('images', pattern = "man_")
 for (image in Allman_images)
 {filelocation <- paste("images\\",image, sep = "")
-scaled_bordered_img <- image_read(filelocation) %>% image_resize("750", filter="Lanczos2Sharp" ) %>% image_border("blue", "1x1")
+scaled_bordered_img <- image_read(filelocation) %>% image_resize("750", filter="Sinc" ) %>% image_border("blue", "1x1")
 newfilelocation <- str_remove(filelocation, "man_")
 image_write(scaled_bordered_img, newfilelocation)}
 
