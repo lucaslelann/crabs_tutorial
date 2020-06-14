@@ -17,47 +17,47 @@ library(stringr)
 #   Left = Left half of the screen 
 #   Right = Right half of the screen
 #   Projection = 2/3 of the screen, removing the 1/3 on the right side.
-
-# List all "raw" images, that are not resized and bordered yet. 
-Allraw_images <- list.files('images', pattern = "raw")
-
-# Separating the fullscreen images, left, right and projections.
-Fullscreen_images <- grep("full", Allraw_images, value = TRUE)
-Leftside_images <- grep("left", Allraw_images, value = TRUE)
-Rightside_images <- grep("right", Allraw_images, value = TRUE)
-Projection_images <- grep("projection", Allraw_images, value = TRUE)
-
-# Resizing, cropping and adding borders for each subset of images.
-
-# Fullscreen images
-for (image in Fullscreen_images)
-{filelocation <- paste("images\\",image, sep = "")
-scaled_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_border("blue", "1x1")
-newfilelocation <- str_remove(filelocation, "raw_full_")
-image_write(scaled_bordered_img, newfilelocation)
-}
-
-# Leftside images
-for (image in Leftside_images)
-{filelocation <- paste("images\\",image, sep = "")
-scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("376x361") %>% image_border("blue", "1x1")
-newfilelocation <- str_remove(filelocation, "raw_left_")
-image_write(scaled_cropped_bordered_img, newfilelocation)}
-
-# Rightside images
-
-for (image in Rightside_images)
-{filelocation <- paste("images\\",image, sep = "")
-scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("376x361+376") %>% image_border("blue", "1x1")
-newfilelocation <- str_remove(filelocation, "raw_right_")
-image_write(scaled_cropped_bordered_img, newfilelocation)}
-
-# Projection images
-for (image in Projection_images)
-{filelocation <- paste("images\\",image, sep = "")
-scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("562x361") %>% image_border("blue", "1x1")
-newfilelocation <- str_remove(filelocation, "raw_projection_")
-image_write(scaled_cropped_bordered_img, newfilelocation)}
+# 
+# # List all "raw" images, that are not resized and bordered yet. 
+# Allraw_images <- list.files('images', pattern = "raw")
+# 
+# # Separating the fullscreen images, left, right and projections.
+# Fullscreen_images <- grep("full", Allraw_images, value = TRUE)
+# Leftside_images <- grep("left", Allraw_images, value = TRUE)
+# Rightside_images <- grep("right", Allraw_images, value = TRUE)
+# Projection_images <- grep("projection", Allraw_images, value = TRUE)
+# 
+# # Resizing, cropping and adding borders for each subset of images.
+# 
+# # Fullscreen images
+# for (image in Fullscreen_images)
+# {filelocation <- paste("images\\",image, sep = "")
+# scaled_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_border("blue", "1x1")
+# newfilelocation <- str_remove(filelocation, "raw_full_")
+# image_write(scaled_bordered_img, newfilelocation)
+# }
+# 
+# # Leftside images
+# for (image in Leftside_images)
+# {filelocation <- paste("images\\",image, sep = "")
+# scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("376x361") %>% image_border("blue", "1x1")
+# newfilelocation <- str_remove(filelocation, "raw_left_")
+# image_write(scaled_cropped_bordered_img, newfilelocation)}
+# 
+# # Rightside images
+# 
+# for (image in Rightside_images)
+# {filelocation <- paste("images\\",image, sep = "")
+# scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("376x361+376") %>% image_border("blue", "1x1")
+# newfilelocation <- str_remove(filelocation, "raw_right_")
+# image_write(scaled_cropped_bordered_img, newfilelocation)}
+# 
+# # Projection images
+# for (image in Projection_images)
+# {filelocation <- paste("images\\",image, sep = "")
+# scaled_cropped_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_crop("562x361") %>% image_border("blue", "1x1")
+# newfilelocation <- str_remove(filelocation, "raw_projection_")
+# image_write(scaled_cropped_bordered_img, newfilelocation)}
 
 ###############################################################################################################################
 # Manually taken screenshots.
@@ -65,7 +65,7 @@ image_write(scaled_cropped_bordered_img, newfilelocation)}
 Allman_images <- list.files('images', pattern = "man_")
 for (image in Allman_images)
 {filelocation <- paste("images\\",image, sep = "")
-scaled_bordered_img <- image_read(filelocation) %>% image_scale("750") %>% image_border("blue", "1x1")
+scaled_bordered_img <- image_read(filelocation) %>% image_resize("750", filter="Lanczos2Sharp" ) %>% image_border("blue", "1x1")
 newfilelocation <- str_remove(filelocation, "man_")
 image_write(scaled_bordered_img, newfilelocation)}
 
