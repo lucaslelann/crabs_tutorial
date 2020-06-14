@@ -1,0 +1,39 @@
+# Visualize PC2 vs. PC3
+
+In this section we visualize the output of your PCA computation. The visualization uses two principal components in a pair-wise plot.
+
+* Right click on the data step "PCA" and select `Add` 
+
+* Select `Data step`
+* Open the new `Data step`
+ 
+Looking at the factors on the left of your screen, you will notice there are additional factors in the factor list compared to last section, namely `ds0.PC1`, `ds0.PC2`, etc..
+
+<center><img src="images/View_PCA_results_default.png"></center>
+
+First we require to empty the project by removing factors. Note a tiny x appears when the mouse is placed over the factor zone.
+
+* Hover over the zones
+* Click on the `x` to clear the zone, repeat for every zone  
+
+The result view should be an empty projection
+
+Now you create the required projection:
+
+* Drag-n-drop the ``ds0.PC2`` factor to the _x-axis zone_
+* Drag-n-drop the ``ds0.PC3`` factor to the _y-axis zone_
+* Drag-n-drop the ``sex`` and ``sp`` factors to the _colors zone_
+
+<center><img src="images/View_PC2_vs_PC3.png"></center>\
+
+* Click on `Crabs workflow`to return to the workflow
+
+* Right click on the Data step and select `Rename`
+
+* Rename it to "PC2vsPC3"
+
+<center><img src="images/View_workflow_PCA_results.png"></center>
+
+* Save workflow by clicking on the save icon besides the "Crabs workflow"  
+
+You visualized PC2 versus PC3. In the next section you gather the PCA results to use them in a multi-group pairwise projection.
