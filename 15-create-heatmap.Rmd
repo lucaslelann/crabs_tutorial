@@ -1,5 +1,7 @@
 # Define a Heatmap view
 
+> same text as define a heatmap view?
+
 In this section you visualize your data using __projections__.
 
 * Right click on the `Crab data` __step__ and select `Add`

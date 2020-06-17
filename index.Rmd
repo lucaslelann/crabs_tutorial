@@ -13,6 +13,9 @@ description: "This is a tutorial to create the Crabs project"
 
 # Introduction
 
+> Need to re-factor this as it is no longer a getting started guide.
+What is this a tutorial for. Not crabs - a PCA maybe?
+
 This step-by-step guide outlines how to upload, view, compute and share data using __Tercen__. It uses a multivariate example data set of morphological  _measurements_ of two species of _Leptograpsus Crabs_ collected at Fremantle, W. Australia (see [Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417)).
 
 <center><img src="images/cover.png"></center>

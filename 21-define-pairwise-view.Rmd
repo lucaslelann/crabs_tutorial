@@ -1,4 +1,7 @@
 # Visualize a multi-pairwise
+
+> same text as chapter 19 - delete or new text?
+
 In this section you create a multi-group pairwise visual.
 
 * Click on the `PCA` data step and select `Add` 

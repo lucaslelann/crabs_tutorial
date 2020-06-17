@@ -1,5 +1,8 @@
 # Install the PCA operator
 
+
+> this chapter should come before Create Project. The software works that way.
+
 In this section you install operators for your team to use.
 
 * Click on `Teams`
