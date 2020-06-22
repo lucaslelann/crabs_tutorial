@@ -1,6 +1,6 @@
 # Visualize a multi-pairwise
 
-> See chapter 21 for same text?
+> See chapter 16 (File 21) for same text?
 
 In this section you create a multi-group pairwise visual.
 
@@ -13,6 +13,8 @@ In this section you create a multi-group pairwise visual.
 * Drag-n-drop the ``variable`` factor to the _column zone_
 * Drag-n-drop the ``variable`` factor to the _row zone_
 * Drag-n-drop the ``index`` factor to the _label zone_
+
+> Label zone concept is introduced here. Should we explain what it isi for.
 
 We have now created a pairwise projection of the ``variable`` factor.
 Resize the projection by dragging the row lines tighter, similarly for the columns. Once resized the projection should look like the image below.
@@ -30,7 +32,11 @@ We have now visualized a multi-group pairwise projection. This view is a powerfu
 
 * Click on "Crabs workflow"
 
+> Instruction to drag the new data step out.
+
 The workflow should look like the image below
+
+> The Gather and Pairwise PCA have not been don at this point in the turorial. New screen shot needed?
 
 <center><img src="images/View_workflow_data_stacked.png"></center>
 

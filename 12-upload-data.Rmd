@@ -3,6 +3,8 @@ In this section you upload the crabs dataset to your teams project.
 
 __Tercen__ accepts data in either _.tsv_ or _csv_. The example data set `crabs_long.csv` is in a _.csv_ format and is in a _long format_. 
 
+> .txt ? 
+
 ---------------------------------------------------------------------------------------------------------------------------------
 The Example dataset:\
 The data set for this guide is available online as a git hub repository. 
@@ -15,6 +17,7 @@ The data set for this guide is available online as a git hub repository.
 
 Save your data on your desktop. Use the default name (it should be `crabs_longformat.csv`).
 
+> Better to say right click link and then save as. The data downloads as cradb_long.csv. No renaming and differant default name. 
 
 __Crab data description:__
 

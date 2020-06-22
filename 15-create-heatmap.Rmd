@@ -14,16 +14,23 @@ In this section you visualize your data using __projections__.
 
 A __projection__ page opens.
 
+
 * Click on + left of the crab data to show a the available factors
+
+> Under `Factors` click the plus icon beside your data name. You will now see all of the headers to your data.
 
 <center><img src="images/Click_on_factors_crab_data.png"></center>
   
 The __projection__ is composed of different _zones_. The _zones_ descriptions are described in the image below:
 
+> No labels on this image. Need to clearly define and name the zones to prevent confusion with next steps.
+
 <center><img src="images/View_zones_description.png"></center>\
 
 You can create any __projection__ of the data by dragging-n-dropping a _factor_ to one of the _zones_. There are four _zones_ to create a table and three on the left to provide details.
 
+
+> Zones need to be better explained with images showing exactly where they are and which zone is which.
 On the right are:
 
 * _y-axis zone_
@@ -32,6 +39,8 @@ On the right are:
 * _row zone_
 
 On the left are:
+
+> image needed with pointers to show better where these are. Could also have a decription of their functionality to help understand them.
 
 * _label zone_
 * _colors zone_
@@ -46,6 +55,7 @@ On the left are:
 You now have the following image:
 
 <center><img src="images/View_projection_default_size.png"></center>
+> image missing
 
 Notice, the `variable` __factor__ is the row and the `observations` are the columns.
 
@@ -57,6 +67,11 @@ Re-size the image to make the projection viewable
 The re-sized image looks like:
 
 <center><img src="images/View_projection_resized.png"></center>\
+
+> Feel we could explain the meaning of this.
+
+
+> feel we could introduce the Heatmap better here and explain why you are following these steps.
 
 * Drag-n-drop the "Measurement" __factor__ to _colors zone_
 * Select `heatmap` in the drop down menu where it currently says `point`. 

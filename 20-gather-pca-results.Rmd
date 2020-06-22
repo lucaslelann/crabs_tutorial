@@ -1,6 +1,10 @@
 # Gathering the PCA results
 
+> This chapter before last chapter.
+
 In this section we perform a gathering of Principal components.
+
+> Maybe explain what a Gather is and why use it.
 
 * Go to the Crabs workflow
 
@@ -18,6 +22,8 @@ The `Gather` __step__ will appear on top of the `PC2vsPC3` __step__
 * Doubleclick on `Gather`
 * Enter "PCA" in the `Namespace`
 * Select all the Principal Components
+
+> Explain what the elements of this screen are and do?
 
 <center><img src="images/View_gathering_PCA.png"></center>\
 

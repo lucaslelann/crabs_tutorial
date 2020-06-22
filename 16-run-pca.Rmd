@@ -2,6 +2,8 @@
 
 In this section you perform a PCA on the data.
 
+>stronger introduction needed.
+
 The projection you created in the previous section can also be used by a computation (i.e. __operator__).
 
 This is due to the _What you see is what you compute_ paradigm. 
@@ -13,6 +15,8 @@ Continue in the projection we created in the previous chapter.
 <center><img src="images/Click_on_add_PCA.png"></center>
 
 * Click on the `+` on the right side of the `OPERATOR` tab
+
+> red box on image or .gif. 
 
 * Select  the `PCA` operator
 
@@ -29,9 +33,14 @@ Continue in the projection we created in the previous chapter.
 The operators in every step can also be activated from the workflow page by right clicking on the data step and selecting `Run`
 The the data step status is indicated by the color on the top right corner, red means not activated and green means activated.
 
+> I don't see any red status icon when I use it. 
+
 * Right click on the data step and select `Rename`
 
-* Always name the steps descriptive to keep a clear workflow. 
+* Always name the steps descriptive to keep a clear workflow.
+
+> This sentence above previous sentence
+
 * Rename to "PCA" 
 
 <center><img src="images/View_PCA_name_renamed.png"></center>
@@ -43,3 +52,5 @@ The steps in the workflow can be dragged to your liking. Try to keep your workfl
 * Save the entire workflow by clicking on the save icon
 
 You have computed a PCA on the data. In the upcoming sections we take a look at the results of the PCA. 
+
+> This is where I ask about assumed knowledge of the user. Do they know what a PCA is? we pressed some buttons but nothing visible happened on screen. Should there be a description of the results of "running a PCA".

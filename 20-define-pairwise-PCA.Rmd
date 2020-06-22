@@ -1,4 +1,7 @@
 # Visualize a pairwise PCA
+
+> This chapter comes agter teh create gather chapter. Swap order with next chapter.
+
 In this section you create a pairwise visual of all Principal Components.
 
 * Click on the `Gather` data step and select `Add` 

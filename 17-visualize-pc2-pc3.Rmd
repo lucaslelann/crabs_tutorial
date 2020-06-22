@@ -4,14 +4,21 @@ In this section we visualize the output of your PCA computation. The visualizati
 
 * Right click on the data step "PCA" and select `Add` 
 
+> I think it is important to explain better why a new step is needed. Also I think we need to spend more time explaining "Why" follow the steps or do these tasks. To help the user with context.
+
 * Select `Data step`
 * Open the new `Data step`
  
 Looking at the factors on the left of your screen, you will notice there are additional factors in the factor list compared to last section, namely `ds0.PC1`, `ds0.PC2`, etc..
 
+> What are they? Why are they here?
+
 <center><img src="images/View_PCA_results_default.png"></center>
 
 First we require to empty the project by removing factors. Note a tiny x appears when the mouse is placed over the factor zone.
+> Explain why do we need to do this.
+
+> Not a text change but functionality question. Should there not be a blank projection grid here because this is a new step. Why did it populate with the choices from the previous step.
 
 * Hover over the zones
 * Click on the `x` to clear the zone, repeat for every zone  
@@ -23,6 +30,8 @@ Now you create the required projection:
 * Drag-n-drop the ``ds0.PC2`` factor to the _x-axis zone_
 * Drag-n-drop the ``ds0.PC3`` factor to the _y-axis zone_
 * Drag-n-drop the ``sex`` and ``sp`` factors to the _colors zone_
+
+> Differentiate the groups the factors are being chosen from.
 
 <center><img src="images/View_PC2_vs_PC3.png"></center>\
 

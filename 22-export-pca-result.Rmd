@@ -1,5 +1,7 @@
 # Export PCA results
 
+> Maybe have this chapter right after running the PCA (Chapter 11 / File 16)
+
 In this section you export the results to a downloadable file. 
 
 
