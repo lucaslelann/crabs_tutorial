@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>The Tercen Crabs Tutorial</title>
+  <title>Chapter 5 Upload data | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 5 Upload data | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 5 Upload data | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="create-a-crabs-team.html"/>
+<link rel="prev" href="create-the-crabs-project.html"/>
+<link rel="next" href="create-a-workflow.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -77,9 +77,12 @@
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Learning Objectives</a></li>
 <li class="chapter" data-level="2" data-path="create-a-crabs-team.html"><a href="create-a-crabs-team.html"><i class="fa fa-check"></i><b>2</b> Create a Crabs team</a></li>
-<li class="chapter" data-level="3" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>3</b> Create the Crabs project</a></li>
-<li class="chapter" data-level="4" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>4</b> Install the PCA operator</a></li>
-<li class="chapter" data-level="5" data-path="upload-the-data.html"><a href="upload-the-data.html"><i class="fa fa-check"></i><b>5</b> Upload the data</a></li>
+<li class="chapter" data-level="3" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>3</b> Install the PCA operator</a></li>
+<li class="chapter" data-level="4" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>4</b> Create the Crabs project</a></li>
+<li class="chapter" data-level="5" data-path="upload-data.html"><a href="upload-data.html"><i class="fa fa-check"></i><b>5</b> Upload data</a><ul>
+<li class="chapter" data-level="5.1" data-path="upload-data.html"><a href="upload-data.html#about-the-exmple-data."><i class="fa fa-check"></i><b>5.1</b> About the exmple data.</a></li>
+<li class="chapter" data-level="5.2" data-path="upload-data.html"><a href="upload-data.html#upload-a-data-file"><i class="fa fa-check"></i><b>5.2</b> Upload a data file</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
 <li class="chapter" data-level="7" data-path="save-the-crabs-workflow.html"><a href="save-the-crabs-workflow.html"><i class="fa fa-check"></i><b>7</b> Save the Crabs workflow</a></li>
 <li class="chapter" data-level="8" data-path="define-a-heatmap-view.html"><a href="define-a-heatmap-view.html"><i class="fa fa-check"></i><b>8</b> Define a Heatmap view</a></li>
@@ -111,44 +114,165 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">The Tercen Crabs Tutorial</h1>
+<div id="upload-data" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Upload data</h1>
+<p>In this section you will copy the provided sample data and upload it to your project.</p>
+<p><strong>Tercen</strong> accepts data in the following file types.</p>
+<table>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>.tsv</strong></td>
+<td>Tab sperated values</td>
+</tr>
+<tr class="even">
+<td><strong>.csv</strong></td>
+<td>Comma seperated values</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Data can be uploaded in either <code>wide</code> format or <code>long</code> format.</p>
+<p>Most people work in a <code>Wide</code> data format. Usually with samples in rows and individual measurements in columns.</p>
+<p>This is the most typical way we use spreadsheet programs.</p>
+<p>For large data sets, with many multiples of measurement criteria, this can become unwieldy.</p>
+<p>It is often necessary to convert from a more “people friendly” <code>wide</code> format to a more “machine friendly” <code>long</code> format.</p>
+<p><strong>Tercen</strong> works in <code>long</code> format and will convert <code>wide</code> data as part of the upload process.</p>
+<p><br />
+</p>
+<div id="about-the-exmple-data." class="section level2">
+<h2><span class="header-section-number">5.1</span> About the exmple data.</h2>
+<p>The example data set is available online in a <strong>Tercen</strong> github repository.</p>
+<p>Right click on this link –&gt; <a href="https://raw.githubusercontent.com/tercen/crabs_dataset/master/data/crabs_long.csv"><strong>Sample File</strong></a> and select <code>Save link as...</code></p>
+<p>This will download a file to your computer called <code>crabs_long.csv</code></p>
+<p><br />
+</p>
+<p><strong>Crab data description:</strong></p>
+<center>
+<img src="images/View_crab_picture.png" />
+</center>
+<p><br />
+</p>
+<p>The data set is called “Crabs” and it is in a <em>long format</em>.</p>
+<p>The file contains 1000 measurements of crab physical traits.</p>
+<p>Data is recorded under six headings called <strong>factors</strong>.</p>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sp</td>
+<td>species, <strong>B</strong> (<span style="color:blue">Blue Crab</span>) or <strong>O</strong> (<span style="color:orange">Orange Crab</span>)</td>
+</tr>
+<tr class="even">
+<td>sex</td>
+<td><strong>M</strong> (Male) or <strong>F</strong> (Female)</td>
+</tr>
+<tr class="odd">
+<td>index</td>
+<td>index 1 to 50 within each of the four groups (2 sex and 2 species)</td>
+</tr>
+<tr class="even">
+<td>variable</td>
+<td>Five crab physical traits can be measured <code>FL</code>, <code>RW</code>, <code>CL</code>, <code>CW</code> and <code>BD</code></td>
+</tr>
+<tr class="odd">
+<td>measurement</td>
+<td>the value in mm of the <code>variable</code></td>
+</tr>
+<tr class="even">
+<td>observation</td>
+<td>index 1 to 200 observations for each variable</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p><strong>Crab variable descriptions</strong></p>
+<p><code>FL</code> (frontal lobe size)<br />
+<code>RW</code> (rear width)<br />
+<code>CL</code> (carapace length)<br />
+<code>CW</code> (carapace width)<br />
+<code>BD</code> (body depth)<br />
+</p>
+<p><br />
+</p>
 </div>
-<div id="learning-objectives" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Learning Objectives</h1>
+<div id="upload-a-data-file" class="section level2">
+<h2><span class="header-section-number">5.2</span> Upload a data file</h2>
+<p>From your crabs projects home page.</p>
 <p><br />
 </p>
-<p><left><img src="images/View_crab_picture.png"></left></p>
+<center>
+<img src="images/0501_new_data_set.png">
+</center>
 <p><br />
 </p>
-<p>In this tutorial you will learn how to conduct a research project on <strong>Tercen</strong>.</p>
-<p>This step-by-step guide simulates a real research scenario.</p>
-<p>It outlines how to upload, view, compute, and share data on <strong>Tercen</strong>.</p>
-<p>For our example we have taken a multivariate data set of morphological <em>measurements</em> of two species of <em>Leptograpsus Crabs</em> collected at Fremantle, W. Australia.
-(Original research paper can be found here <a href="https://www.publish.csiro.au/zo/ZO9740417">Mahon 1974</a>).</p>
-<p>We will use the PCA (Principle Component Analysis) Operator to analyse this data.</p>
-<p>More information on the use of PCA for statistical analysis in Life Sciences can be found here <a href="https://https://blog.umetrics.com/what-is-principal-component-analysis-pca-and-how-it-is-used"><strong>What is principal component analysis (PCA)</strong></a></p>
-<p>The following steps are covered:</p>
-<ul>
-<li>Create a project <strong>team</strong></li>
-<li>Add the PCA Operator</li>
-<li>Create a <strong>Project</strong></li>
-<li><strong>Upload</strong> the crabs dataset</li>
-<li>Build an analysis <strong>workflow</strong></li>
-<li><strong>Calculate</strong> data with PCA</li>
-<li>Use the <strong>outputs</strong> of the previous calculations in new workflow steps</li>
-<li>Gather</li>
-<li><strong>Export</strong> the results</li>
-</ul>
+<p>Click <code>New data set</code></p>
+<p><br />
+</p>
+<p>A dialog window will open.</p>
+<p>Here you can give your data a name (e.g.<code>Crab data</code>)</p>
+<p>Click on <code>Choose File</code>, browse to your files location and select.</p>
+<p>Leave the defaults for encoding, separator, and quote types.</p>
+<p>Click <code>Next</code></p>
+<p><br />
+</p>
+<center>
+<img src="images/0502_select_upload_file.gif">
+</center>
+<p><br />
+</p>
+<p><strong>tercen</strong> will display the column headers (factors) from your file and the data type (e.g character, numeric) it has detected.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0503_upload_table.png">
+</center>
+<p><br />
+</p>
+<p>Click <code>OK</code></p>
+<p><br />
+</p>
+<p>(The <code>Next</code> button will take you to the <code>wide to long</code>conversion wizard. This isn’t necessary as the crabs sample data is already in long format.)</p>
+<p><br />
+</p>
+<p>You will now see the new data set listed on the project home page.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0504_uploaded_to_project.png">
+</center>
+<p><br />
+</p>
+<p>You have successfully uploaded the sample data to <strong>Tercen</strong>.</p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Next…</strong> create a new workflow.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="create-a-crabs-team.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="create-the-crabs-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="create-a-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

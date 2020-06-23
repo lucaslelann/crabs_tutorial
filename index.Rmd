@@ -1,6 +1,6 @@
 ---
-title: "Crabs Tutorial"
-author: "Tercen support document"
+title: "The Tercen Crabs Tutorial"
+author: ""
 site: bookdown::bookdown_site
 documentclass: book
 output: bookdown::gitbook
@@ -11,29 +11,54 @@ github-repo:
 description: "This is a tutorial to create the Crabs project"
 ---
 
-# Introduction
+# Learning Objectives
 
-> Need to re-factor this as it is no longer a getting started guide.
-What is this a tutorial for. Not crabs - a PCA maybe?
+\
 
-This step-by-step guide outlines how to upload, view, compute and share data using __Tercen__. It uses a multivariate example data set of morphological  _measurements_ of two species of _Leptograpsus Crabs_ collected at Fremantle, W. Australia (see [Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417)).
+<center><img src="images/View_crab_picture.png"></center>
 
-<center><img src="images/cover.png"></center>
+\
 
-* __Why read this guide?__ :
-It is the easiest and quickest path to understanding the basics of __Tercen__. 
+In this tutorial you will learn how to conduct a research project on __Tercen__.
 
-* __Acknowledgement__:
-I would like to thank all the users for their feedback. It has helped us improve __Tercen__.
+This step-by-step guide outlines how to upload, view, compute, and share data on __Tercen__.
 
-* __Feedback__:
-If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/crabs_tutorial/issues).
+In our training scenario we will use a multivariate data set of morphological  _measurements_ of two species of _Leptograpsus Crabs_ 
 
-* __Motivation__:  
-__Tercen__  promotes collaboration for data analysis. Not everyone can code or even wants to,  but everyone should benefit from the explosion of data and code currently taking place.
-__Tercen__ allows non programmers (e.g. biologists) to explore their data and allows programmers (e.g. bioinformaticians) to upload their code (or web-apps) for the biologist to use. By offering these services we believe biologists get empowered and can claim back control of their data. The bioinformatician gets liberated from the operational details and day to day analysis demands from the biologist. This is summed up with the phrase:
+We will apply the PCA (Principle Component Analysis) Operator to analyse this data. 
 
-> Tercen __empowers__ the biologist and __liberates__ the bioinformatician.
+\
 
-<center><img src="images/stairs.png"></center>
+The following steps are covered:
 
+* Create a project __team__
+* Add the PCA Operator
+* Create a __Project__ 
+* __Upload__ the crabs dataset 
+* Build an analysis __workflow__ 
+* __Calculate__ data with PCA
+* Use the __outputs__ of the previous calculations in new workflow steps
+* Gather
+* __Export__ the results
+
+\
+
+\
+
+Our example data set of morphological  measurements of two species of Leptograpsus Crabs were collected at Fremantle, W. Australia. 
+
+Original research paper can be read here. 
+
+[Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417)).
+
+\
+
+More information on the use of PCA for statistical analysis in Life Sciences can be found here 
+
+[__What is principal component analysis (PCA)__](https://https://blog.umetrics.com/what-is-principal-component-analysis-pca-and-how-it-is-used)
+
+\
+
+\
+
+__Next...__ create a crabs team.

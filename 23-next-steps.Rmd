@@ -9,3 +9,12 @@ Here are some ideas:
 
 
 <center>![](images/stairs.png)</center>
+
+
+
+* __Feedback__:
+If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/crabs_tutorial/issues).
+
+
+* __Acknowledgement__:
+I would like to thank all the users for their feedback. It has helped us improve __Tercen__.

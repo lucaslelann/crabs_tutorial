@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
 
-<meta name="author" content="Tercen support document" />
+<meta name="author" content="" />
 
 
 
@@ -75,8 +75,8 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="create-the-crabs-tutorial.html"><a href="create-the-crabs-tutorial.html"><i class="fa fa-check"></i><b>2</b> Create the Crabs tutorial</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> iNTRODUCTION</a></li>
+<li class="chapter" data-level="2" data-path="learning-objectives.html"><a href="learning-objectives.html"><i class="fa fa-check"></i><b>2</b> Learning Objectives</a></li>
 <li class="chapter" data-level="3" data-path="create-the-crabs-team.html"><a href="create-the-crabs-team.html"><i class="fa fa-check"></i><b>3</b> Create the Crabs team</a></li>
 <li class="chapter" data-level="4" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>4</b> Create the Crabs project</a></li>
 <li class="chapter" data-level="5" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>5</b> Install the PCA operator</a></li>
@@ -116,15 +116,27 @@
 <h1><span class="header-section-number">Chapter 12</span> Visualize PC2 vs. PC3</h1>
 <p>In this section we visualize the output of your PCA computation. The visualization uses two principal components in a pair-wise plot.</p>
 <ul>
-<li><p>Right click on the data step “PCA” and select <code>Add</code></p></li>
-<li><p>Select <code>Data step</code></p></li>
-<li><p>Open the new <code>Data step</code></p></li>
+<li>Right click on the data step “PCA” and select <code>Add</code></li>
+</ul>
+<blockquote>
+<p>I think it is important to explain better why a new step is needed. Also I think we need to spend more time explaining “Why” follow the steps or do these tasks. To help the user with context.</p>
+</blockquote>
+<ul>
+<li>Select <code>Data step</code></li>
+<li>Open the new <code>Data step</code></li>
 </ul>
 <p>Looking at the factors on the left of your screen, you will notice there are additional factors in the factor list compared to last section, namely <code>ds0.PC1</code>, <code>ds0.PC2</code>, etc..</p>
+<blockquote>
+<p>What are they? Why are they here?</p>
+</blockquote>
 <center>
 <img src="images/View_PCA_results_default.png">
 </center>
-<p>First we require to empty the project by removing factors. Note a tiny x appears when the mouse is placed over the factor zone.</p>
+<p>First we require to empty the project by removing factors. Note a tiny x appears when the mouse is placed over the factor zone.
+&gt; Explain why do we need to do this.</p>
+<blockquote>
+<p>Not a text change but functionality question. Should there not be a blank projection grid here because this is a new step. Why did it populate with the choices from the previous step.</p>
+</blockquote>
 <ul>
 <li>Hover over the zones</li>
 <li>Click on the <code>x</code> to clear the zone, repeat for every zone</li>
@@ -136,6 +148,9 @@
 <li>Drag-n-drop the <code>ds0.PC3</code> factor to the <em>y-axis zone</em></li>
 <li>Drag-n-drop the <code>sex</code> and <code>sp</code> factors to the <em>colors zone</em></li>
 </ul>
+<blockquote>
+<p>Differentiate the groups the factors are being chosen from.</p>
+</blockquote>
 <center>
 <img src="images/View_PC2_vs_PC3.png">
 </center>
