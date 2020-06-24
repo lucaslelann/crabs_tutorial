@@ -10,14 +10,9 @@ From your personal home page.
 
 Click on `Teams`
 
-\
-
 Click on `TheCrabsTeam`
 
-\
-
 Click on `Library`
-
 
 \
 
@@ -34,8 +29,6 @@ A list of the operators available in __Tercen__ appears.
 \
 
 Select the `PCA` operator
-
-\
 
 Click `OK`
 

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Data projection and visualisation. | The Tercen Crabs Tutorial</title>
+  <meta name="description" content="This is a tutorial to create the Crabs project" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Data projection and visualisation. | The Tercen Crabs Tutorial" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a tutorial to create the Crabs project" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Data projection and visualisation. | The Tercen Crabs Tutorial" />
+  
+  <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="create-a-workflow.html"/>
+<link rel="next" href="add-the-pca-operator.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105575395-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2" data-path="create-a-crabs-team.html"><a href="create-a-crabs-team.html"><i class="fa fa-check"></i><b>2</b> Create a Crabs team</a></li>
+<li class="chapter" data-level="3" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>3</b> Install the PCA operator</a></li>
+<li class="chapter" data-level="4" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>4</b> Create the Crabs project</a></li>
+<li class="chapter" data-level="5" data-path="upload-data.html"><a href="upload-data.html"><i class="fa fa-check"></i><b>5</b> Upload data</a><ul>
+<li class="chapter" data-level="5.1" data-path="upload-data.html"><a href="upload-data.html#about-the-exmple-data."><i class="fa fa-check"></i><b>5.1</b> About the exmple data.</a></li>
+<li class="chapter" data-level="5.2" data-path="upload-data.html"><a href="upload-data.html#upload-a-data-file"><i class="fa fa-check"></i><b>5.2</b> Upload a data file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
+<li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
+<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
+<li class="chapter" data-level="12" data-path="visualize-the-pca-as-a-multi-group-pairwise.html"><a href="visualize-the-pca-as-a-multi-group-pairwise.html"><i class="fa fa-check"></i><b>12</b> Visualize the PCA as a multi-group pairwise</a></li>
+<li class="chapter" data-level="13" data-path="export-your-computations-results.html"><a href="export-your-computations-results.html"><i class="fa fa-check"></i><b>13</b> Export your computations results</a></li>
+<li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Tercen Crabs Tutorial</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-projection-and-visualisation." class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Data projection and visualisation.</h1>
+<p>In this section we will…</p>
+<p>Add a data analysis step to our workflow.</p>
+<p>Review the projection screen.</p>
+<p>Assign factors to make a projection of the data.</p>
+<p>Visualize our projection as a Heatmap.</p>
+<p><br />
+</p>
+<p><strong>Add an analysis Data Step</strong></p>
+<p>Right click on the Data Table step to bring up the long menu.</p>
+<p>Click <code>Add</code></p>
+<p>Select Data Step</p>
+<p>Click <code>Ok</code></p>
+<p>You will be taken to the <strong>Projection Screen</strong></p>
+<p><br />
+</p>
+<center>
+<img src="images/0701_add_data_step.gif">
+</center>
+<p><br />
+</p>
+<p><strong>Understanding the Projection Screen</strong></p>
+<p>The projection screen is made up of zones which display data or allow it to be manipulated.</p>
+<p>The first two to understand are the <strong>factors</strong> list and the <strong>projection grid</strong>.</p>
+<p><br />
+</p>
+<p>Factors are the individual categories of your data which can be manipulated into a visualisation.</p>
+<p>They can be the data you uploaded or the results of a computation performed by an operator.</p>
+<p>Click on the <code>+</code> icon beside <code>Crabs Data</code></p>
+<p>You will see the <strong>factors</strong> listed are the headers of the sample data file we uploaded.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0702_projection_factors.png">
+</center>
+<p><br />
+</p>
+<p>The projection grid is where visualisations are created and displayed.</p>
+<p>There are four divisions to a projection grid.</p>
+<p><strong>X-Axis</strong><br />
+<strong>Y-Axis</strong><br />
+<strong>Column</strong><br />
+<strong>Row</strong><br />
+</p>
+<p><br />
+</p>
+<center>
+<img src="images/0703_projection_grid.png">
+</center>
+<p><br />
+</p>
+<p>By adding factors to these zones a projection is created and visualisations can be made of it.</p>
+<p>Factors are added by drag-and-drop from their list.</p>
+<p><br />
+</p>
+<p>In the central column of the projection screen is the definitions zone.</p>
+<p>This is where factors can be dragged and dropped to configure how data is represented on the visualisation.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0704_projection_definition.png">
+</center>
+<p><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th>Zone</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Label</strong></td>
+<td>Define which factor provides additional detail to data</td>
+</tr>
+<tr class="even">
+<td><strong>Colours</strong></td>
+<td>Control vistaulisations by assigning colours to values</td>
+</tr>
+<tr class="odd">
+<td><strong>Error Bar</strong></td>
+<td>an error bar</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Help needed here</p>
+</blockquote>
+<p><br />
+</p>
+<p><strong>Make a projection of the Crabs Data</strong></p>
+<p>Drag and drop factors to zones on the projection grid as follows.</p>
+<p><code>observation</code> to <em>column</em>
+<code>measurement</code> to <em>y-axis</em>
+<code>variable</code> to <em>row</em></p>
+<p>Re-size your visualisation by clicking the grid lines and dragging them closer together.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0705_create_projection.gif">
+</center>
+<p><br />
+</p>
+<p>Notice, the <code>variable</code> <strong>factor</strong> is the row and the <code>observations</code> are the columns.</p>
+<p>The default data value sort for a <strong>Tercen</strong> visualisation is Low to High.</p>
+<blockquote>
+<p>Need help on decription line. What has happened here?</p>
+</blockquote>
+<p><br />
+</p>
+<p><strong>Configure the data visualisation as a Heatmap</strong></p>
+<p>By changing control settings the data projection can be visualised on differant ways.</p>
+<p>Drag-n-drop the <code>Measurement</code> factor to the <code>Colors</code> zone.</p>
+<blockquote>
+<p>Explaination line here.</p>
+</blockquote>
+<p>Change the visualisation setting from <code>point</code> to <code>heatmap</code>.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0706_projection_heatmap.gif">
+</center>
+<p><br />
+</p>
+<p>Congratulations on your first heatmap visual.</p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Next…</strong> analyze the data by performing a <strong>PCA</strong></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="create-a-workflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="add-the-pca-operator.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

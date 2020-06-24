@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Add the PCA Operator | The Tercen Crabs Tutorial</title>
+  <meta name="description" content="This is a tutorial to create the Crabs project" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Add the PCA Operator | The Tercen Crabs Tutorial" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a tutorial to create the Crabs project" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Add the PCA Operator | The Tercen Crabs Tutorial" />
+  
+  <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-projection-and-visualisation-.html"/>
+<link rel="next" href="visualize-the-results-of-the-pca.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105575395-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2" data-path="create-a-crabs-team.html"><a href="create-a-crabs-team.html"><i class="fa fa-check"></i><b>2</b> Create a Crabs team</a></li>
+<li class="chapter" data-level="3" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>3</b> Install the PCA operator</a></li>
+<li class="chapter" data-level="4" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>4</b> Create the Crabs project</a></li>
+<li class="chapter" data-level="5" data-path="upload-data.html"><a href="upload-data.html"><i class="fa fa-check"></i><b>5</b> Upload data</a><ul>
+<li class="chapter" data-level="5.1" data-path="upload-data.html"><a href="upload-data.html#about-the-exmple-data."><i class="fa fa-check"></i><b>5.1</b> About the exmple data.</a></li>
+<li class="chapter" data-level="5.2" data-path="upload-data.html"><a href="upload-data.html#upload-a-data-file"><i class="fa fa-check"></i><b>5.2</b> Upload a data file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
+<li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
+<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
+<li class="chapter" data-level="12" data-path="visualize-the-pca-as-a-multi-group-pairwise.html"><a href="visualize-the-pca-as-a-multi-group-pairwise.html"><i class="fa fa-check"></i><b>12</b> Visualize the PCA as a multi-group pairwise</a></li>
+<li class="chapter" data-level="13" data-path="export-your-computations-results.html"><a href="export-your-computations-results.html"><i class="fa fa-check"></i><b>13</b> Export your computations results</a></li>
+<li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Tercen Crabs Tutorial</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="add-the-pca-operator" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Add the PCA Operator</h1>
+<p>As we saw in the previous chapter Projections can be visualised in various ways.</p>
+<p>They can also have computations performed on them.</p>
+<p>The data generated by these computations becomes available for further visualisations in later steps of the workflow.</p>
+<p>In this section you will perform a Principle Component Analysis on the sample data.</p>
+<p>The projection screen has a <strong>zone</strong> where Operators are added.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0801_operator_zone.png">
+</center>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Add the PCA Operator to the projection</strong></p>
+<p>Click <code>+</code></p>
+<p>Select the <code>PCA</code> operator</p>
+<p>Click on <code>Run</code> to activate the operator</p>
+<p>Don’t forget to save your workflow.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0802_projection_run-pca.gif">
+</center>
+<p><br />
+</p>
+<p>The PCA has been calculated on the data.</p>
+<p>Another data step is needed to view it’s results.</p>
+<p><br />
+</p>
+<p><strong>Managing Steps on the Workflow Screen</strong></p>
+<p>It is important to take the time to label steps correctly and organise your workflow in ways it can be easily understood.</p>
+<p>Return to the workflow page</p>
+<p>Right click on your data step</p>
+<p>Choose <code>Rename</code> and type “PCA” to identify this step.</p>
+<p>A green dot appears in the top right corner.</p>
+<p>This is to tell you that the calculation has been performed.</p>
+<p>You can clear your calculations or re-run them using the long menu.</p>
+<p>Steps can be dragged into new positions to make your workflow more readable.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0803_projection_admin.gif">
+</center>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Next…</strong> visualise the results of the PCA computation.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-projection-and-visualisation-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="visualize-the-results-of-the-pca.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

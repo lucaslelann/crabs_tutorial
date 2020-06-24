@@ -36,7 +36,7 @@ Click `Ok`
 
 You will now see the home page of your new project.
 
-Note the Toolbar that contains the main functions for building a project.
+(Note the Toolbar that contains the main functions for building a project.)
 
 \
 

@@ -1,6 +1,8 @@
 # Upload data
 
-In this section you will copy the provided sample data and upload it to your project.
+In this section you will copy the sample data we have providedf and upload it to your project.
+
+\
 
 __Tercen__ accepts data in the following file types.
 
@@ -81,14 +83,15 @@ From your crabs projects home page.
 
 Click `New data set`
 
+A dialog window will open.
 
 \
 
-A dialog window will open.
+Give your data a name (e.g.`Crab data`)
 
-Here you can give your data a name (e.g.`Crab data`)
+Click on `Choose File` 
 
-Click on `Choose File`, browse to your file location and select it.
+Browse to your file location and select it.
 
 Leave the defaults for encoding, separator, and quote types.
 
@@ -100,7 +103,7 @@ Click `Next`
 
 \
 
-__tercen__ will display the column headers (factors) from your file and the data type (e.g character, numeric) it has detected in the rows.
+__tercen__ will display the column headers (factors) it has detected from your file and the data type (e.g character, numeric) it has detected in the rows.
 
 \
 
@@ -112,7 +115,7 @@ Click `OK`
 
 \
 
-_(The `Next` button will take you to the `wide to long`conversion wizard. This isn't necessary as the crabs sample data is already in long format.)_
+_(The `Next` button would take you to the `wide to long`conversion wizard. This isn't necessary as the Crabs sample data is already in long format.)_
 
 \
 

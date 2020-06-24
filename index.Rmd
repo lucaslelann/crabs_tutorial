@@ -15,7 +15,7 @@ description: "This is a tutorial to create the Crabs project"
 
 \
 
-<center><img src="images/View_crab_picture.png"></center>
+<center><img src="images/0101_crab_species.png"></center>
 
 \
 
@@ -45,11 +45,9 @@ The following steps are covered:
 
 \
 
-Our example data set of morphological  measurements of two species of Leptograpsus Crabs were collected at Fremantle, W. Australia. 
+Our example data set of morphological  measurements of two species of Leptograpsus Crabs was collected at Fremantle, W. Australia. 
 
-Original research paper can be read here. 
-
-[Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417)).
+(Original research paper can be read here. [Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417))
 
 \
 

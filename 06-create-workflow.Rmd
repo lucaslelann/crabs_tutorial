@@ -1,0 +1,98 @@
+# Create a workflow
+
+In this section you will create a workflow for your project.
+
+\
+
+From your Crabs Project home page
+
+Click on `New workflow`
+
+\
+
+<center><img src="images/0601_new_workflow.png"></center>
+
+\
+
+Name the workflow (e.g. "Crabs workflow")
+
+Click `OK`
+
+\
+
+<center><img src="images/0602_name_workflow.png"></center>
+
+\
+
+You will be taken to the empty workflow builder screen.
+
+It is titled "Crabs workflow".
+
+We will now add a workflow step
+
+The first step to any workflow will be the Data Table that was uploaded.
+
+\
+
+__Add a step to a workflow__
+
+Right click the workflow builder screen.
+
+Select `Add`
+
+Click on `Table`
+
+Select the Crab data
+
+Click on `OK`
+
+You will see a box called `Crabs Data` created on your workflow.
+
+You have now successfully imported the crabs data set into the projects workflow.
+
+(Note that it shows the `Table` icon in the top left corner.)
+
+\
+
+<center><img src="images/0603_add_table_step.gif"></center>\
+
+\
+
+The box that had just appeared in the workflow is called a __step__ 
+
+Steps are the fundamental building blocks of your data analysis process.
+
+By right clicking a step the long menu appears.
+
+This allows you to perform actions on a step.
+
+\
+
+Action|Description
+------|---
+__Reset__ |Clears any calculations performed on the data.
+__Edit__|Takes you to the projection page of the step.
+__Rename__|Change the step name to something more descriptive.
+__Remove__|Delete this step.
+__Duplicate__|Copy the step to make a differant visualisation.
+__Add__| Add a new step which will use the outputs from this step.
+
+\
+
+__Saving Workflows__
+
+\
+
+As you make changes to a workflow and perform calculations __Tercen__ will prompt you to save your work by displaying a disk icon beside the name of the workflow.
+
+It is recommended you save your work often.
+
+\
+
+<center><img src="images/0604_save_workflow.png"></center>\
+
+\
+
+\
+
+__Next...__ make a visual projection of your data.

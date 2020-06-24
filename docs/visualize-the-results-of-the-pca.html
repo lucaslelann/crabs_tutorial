@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial</title>
+  <meta name="description" content="This is a tutorial to create the Crabs project" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a tutorial to create the Crabs project" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial" />
+  
+  <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="add-the-pca-operator.html"/>
+<link rel="next" href="add-a-gather-step.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105575395-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2" data-path="create-a-crabs-team.html"><a href="create-a-crabs-team.html"><i class="fa fa-check"></i><b>2</b> Create a Crabs team</a></li>
+<li class="chapter" data-level="3" data-path="install-the-pca-operator.html"><a href="install-the-pca-operator.html"><i class="fa fa-check"></i><b>3</b> Install the PCA operator</a></li>
+<li class="chapter" data-level="4" data-path="create-the-crabs-project.html"><a href="create-the-crabs-project.html"><i class="fa fa-check"></i><b>4</b> Create the Crabs project</a></li>
+<li class="chapter" data-level="5" data-path="upload-data.html"><a href="upload-data.html"><i class="fa fa-check"></i><b>5</b> Upload data</a><ul>
+<li class="chapter" data-level="5.1" data-path="upload-data.html"><a href="upload-data.html#about-the-exmple-data."><i class="fa fa-check"></i><b>5.1</b> About the exmple data.</a></li>
+<li class="chapter" data-level="5.2" data-path="upload-data.html"><a href="upload-data.html#upload-a-data-file"><i class="fa fa-check"></i><b>5.2</b> Upload a data file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
+<li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
+<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
+<li class="chapter" data-level="12" data-path="visualize-the-pca-as-a-multi-group-pairwise.html"><a href="visualize-the-pca-as-a-multi-group-pairwise.html"><i class="fa fa-check"></i><b>12</b> Visualize the PCA as a multi-group pairwise</a></li>
+<li class="chapter" data-level="13" data-path="export-your-computations-results.html"><a href="export-your-computations-results.html"><i class="fa fa-check"></i><b>13</b> Export your computations results</a></li>
+<li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Tercen Crabs Tutorial</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="visualize-the-results-of-the-pca" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Visualize the results of the PCA</h1>
+<p>Computations made in a data step can become the inputs to data steps that are attached to them in the workflow.</p>
+<p>Both the original data and the computed results are passed to the “child” step.</p>
+<p>In this section we will visualize the output of the last chapters PCA computation.</p>
+<p>We will use two principal components (PC2 and PC3) in a pair-wise plot.</p>
+<p><strong>Add a new data step</strong></p>
+<p>from the workflow builder screen.</p>
+<p>Right Click on the <code>PCA</code> data step to access the long menu</p>
+<p>Select <code>Add</code></p>
+<p>Choose <code>Data Step</code></p>
+<p>The projection screen will open.</p>
+<p>You will see it is a copy of the “parent” data step <code>PCA</code> with a new set of <strong>factors</strong></p>
+<p>The new factors are the results of the PCA computation.</p>
+<p>Click the <code>+</code> icon to view them.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0901_pca_new_factors.png">
+</center>
+<p><br />
+</p>
+<blockquote>
+<p>Help: explaination of what these results are.</p>
+</blockquote>
+<p><br />
+</p>
+<p><strong>Use PCA results in a new visualisation</strong></p>
+<p>To create a new visualisation we must first remove the previous one.</p>
+<p>Click the small <code>X</code> which appears in the corners of the projection grid divisions.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0902_pca_clear_grid.gif">
+</center>
+<p><br />
+</p>
+<p>The resulting view should be an empty projection</p>
+<p><br />
+</p>
+<p>To create the a new pair-wise projection drag and drop the following factors:</p>
+<p><br />
+</p>
+<p>PCA <code>ds0.PC2</code> to <code>X-Axis</code><br />
+PCA <code>ds0.PC3</code> to <code>Y-Axis</code><br />
+Crabs Data <code>sex</code> to <code>Colors</code> 
+Crabs Data <code>sp</code> to <code>Colors</code><br />
+</p>
+<p>Save the workflow.</p>
+<p><br />
+</p>
+<p>This creates a visualisation of the PCA results (PC2 and PC3) in a pairwise plot.</p>
+<p>It is color coded to show the main sex/species groupings.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0903_pca_pairwise.gif">
+</center>
+<p><br />
+</p>
+<p>Return to the workflow builder screen to rename your data step.</p>
+<p><br />
+</p>
+<center>
+<img src="images/0904_pca_rename.gif">
+</center>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Next…</strong> gather the PCA results to use them in a multi-group pairwise projection.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="add-the-pca-operator.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="add-a-gather-step.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
