@@ -1,8 +1,6 @@
 # Visualize gathered PCA results
 
-In this section you create a pairwise visual of the Principal Components processed in the `Gather` step.
-
-> sentence explaining why
+In this section you create a pairwise visual of the Principal Components collected in the `Gather` step.
 
 \
 
@@ -52,6 +50,12 @@ Drag and drop the following factors to the projection grid zones.
 Re-size the grid lines to make the projection view-able
 
 Save the workflow
+
+Color is used to indicate what data point belongs to a female or male (gender is an observation) crab specimen.
+
+Placing `Observation` on `Label` separates the data points into individual crabs so they can be plotted.
+
+\
 
 You have created a pairwise projection of all the Principal Components. 
 

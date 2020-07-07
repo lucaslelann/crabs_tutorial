@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Create a Crabs team | The Tercen Crabs Tutorial</title>
+  <title>Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Create a Crabs team | The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Create a Crabs team | The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="install-the-pca-operator.html"/>
+<link rel="prev" href="visualize-gathered-pca-results.html"/>
+<link rel="next" href="export-your-computations-results.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -109,31 +109,73 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="create-a-crabs-team" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Create a Crabs team</h1>
-<p>Before starting this tutorial we recommend you first read our <a href="https://tercen.github.io/starters-guide/"><strong>Getting Started Guide</strong></a>.</p>
-<p>It will help you get familiar with the <strong>Tercen</strong> interface and introduce you to software concepts which are used in this tutorial.</p>
+<div id="multi-group-pairwise-visualisation" class="section level1">
+<h1><span class="header-section-number">Chapter 12</span> Multi-group pairwise visualisation</h1>
+<p>In this section you create a multi-group pairwise visual of the PCA calculation.</p>
+<p>By putting the same factor (i.e. <code>variable</code>) on the row and column zone.</p>
+<p>This view is a powerful tool for data visualization.</p>
+<blockquote>
+<p>explaination line.</p>
+</blockquote>
 <p><br />
 </p>
-<p>In this section you will create a new team in <strong>Tercen</strong>.</p>
+<p><strong>Add a data step</strong></p>
+<p>From the workflow builder screen.</p>
+<p>Click on the <code>PCA</code> data step</p>
+<p>Select <code>Add</code></p>
+<p>Choose <code>Data step</code></p>
+<p>The projection screen will open.</p>
+<p>Clear the projection grid by clicking <code>x</code> on the zones.</p>
+<p>Drag and drop these factors into the empty grid</p>
 <p><br />
 </p>
-<p>Sign-In to <strong>Tercen</strong>.</p>
-<p>On your personal home page Click on <code>Teams</code></p>
-<p>Click on <code>+ New team</code></p>
-<p>Give your team a name (e.g “TheCrabsTeam”) in the <code>Name</code> tab</p>
-<p>Click <code>OK</code></p>
-<p><br />
-</p>
-<p><left><img src="images/0201_Create_Team.gif"></left></p>
-<p><br />
-</p>
-<p>You have now created a team. It is located in your teams list.</p>
-<p><br />
+<p><code>measurement</code> to <strong>Y-Axis</strong><br />
+<code>variable</code> to <strong>column</strong><br />
+<code>variable</code> to <strong>row</strong><br />
+<code>index</code> to <strong>labels</strong><br />
 </p>
 <p><br />
 </p>
-<p><strong>Next…</strong> Select an operator for the Team Library.</p>
+<p>Re-size the projection by dragging the grid lines tighter.</p>
+<p>You have now created a pairwise projection of the <code>variable</code> factor.</p>
+<p><br />
+</p>
+<center>
+<img src="images/1201_vairable_pairwise.gif">
+</center>
+<p><br />
+</p>
+<p><strong>Convert to Multi-Group pairwise</strong></p>
+<p>Drag and drop these factors.</p>
+<p><br />
+</p>
+<p><code>sp</code> to <strong>column</strong><br />
+<code>sex</code> to <strong>colors</strong><br />
+</p>
+<p><br />
+</p>
+<center>
+<img src="images/1202_multi_group_pairwise.gif">
+</center>
+<p><br />
+</p>
+<p>You have now visualized a multi-group pairwise projection.</p>
+<p><br />
+</p>
+<p>Remember to return to the Workflow Builder and rename the step to “Multi Pairwise”</p>
+<p>You can drag it into position to make it more view-able.</p>
+<p><br />
+</p>
+<center>
+<img src="images/1203_workflow_multi_pairwise.png">
+</center>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><strong>Next</strong> make the results of a computation exportable.</p>
 
 </div>
             </section>
@@ -141,8 +183,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="install-the-pca-operator.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="visualize-gathered-pca-results.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="export-your-computations-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

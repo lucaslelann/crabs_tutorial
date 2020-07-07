@@ -88,11 +88,9 @@ This is where factors can be dragged and dropped to configure how data is repres
 
 Zone|Description
 ------|---
-__Label__ |Define which factor provides additional detail to data
-__Colours__|Control vistaulisations by assigning colours to values
-__Error Bar__|an error bar
-
-> Help needed here
+__Label__ |Additional descriptions applied to a factor - used to separate factors
+__Colours__|Control visualisations by assigning colors to values
+__Error Bar__|Shows margin of error on calculations (such as Standard Deviation)
 
 \
 
@@ -115,9 +113,9 @@ Re-size your visualisation by grabbing the grid lines and dragging them closer t
 
 Notice, the `variable` __factor__ is the row and the `observations` are the columns.
 
-Unless specifiec otherwise by you __Tercen__ with sort data from low to high values.
+By default __Tercen__ will sort data from low to high values.
 
-> Need help on decription line. What has happened here?
+
 
 \
 
@@ -127,7 +125,9 @@ By changing control settings the data projection can be visualised on different 
 
 Drag and drop the `Measurement` factor to the `Colors` zone.
 
-> Explaination line here.
+A gradient is formed based on the values in the data
+
+The higher values are assigned the "hot" colors and the lower ones "cold" colors.
 
 Change the visualisation setting from `point` to `heatmap`. 
 
@@ -137,7 +137,13 @@ Change the visualisation setting from `point` to `heatmap`.
 
 \
 
-Congratulations, you have created your first heatmap visual. 
+> Because We assigned `Observation` to`Column` the specimens are listed across from 1 to 200.
+The Heatmap appears to divide them into four groups but this is purely visual.
+It happened because the uploaded data was pre-sorted into groups (Blue-Male Blue-Female Orange-Male and Orange-Female. The Heatmap is not performing a grouping on the `Observation` field.
+
+\
+
+Congratulations, you have created your first Heatmap visual. 
 
 \
 

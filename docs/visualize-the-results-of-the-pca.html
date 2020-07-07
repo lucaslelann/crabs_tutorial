@@ -89,7 +89,7 @@
 <li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
 <li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
 <li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="visualize-the-pca-as-a-multi-group-pairwise.html"><a href="visualize-the-pca-as-a-multi-group-pairwise.html"><i class="fa fa-check"></i><b>12</b> Visualize the PCA as a multi-group pairwise</a></li>
+<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computations-results.html"><a href="export-your-computations-results.html"><i class="fa fa-check"></i><b>13</b> Export your computations results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -112,9 +112,11 @@
 <div id="visualize-the-results-of-the-pca" class="section level1">
 <h1><span class="header-section-number">Chapter 9</span> Visualize the results of the PCA</h1>
 <p>Computations made in a data step can become the inputs to data steps that are attached to them in the workflow.</p>
-<p>Both the original data and the computed results are passed to the “child” step.</p>
-<p>In this section we will visualize the output of the last chapters PCA computation.</p>
-<p>We will use two principal components (PC2 and PC3) in a pair-wise plot.</p>
+<p>In <strong>Tercen</strong> both the original data, and the computation results, are passed to the “child” step.</p>
+<p>In this Chapter we will visualize the output of the PCA computation.</p>
+<p>We will use two of the results (Principal Components) in a pair-wise plot.</p>
+<p><br />
+</p>
 <p><strong>Add a new data step</strong></p>
 <p>from the workflow builder screen.</p>
 <p>Right Click on the <code>PCA</code> data step to access the long menu</p>
@@ -123,7 +125,8 @@
 <p>The projection screen will open.</p>
 <p>You will see it is a copy of the “parent” data step <code>PCA</code> with a new set of <strong>factors</strong></p>
 <p>The new factors are the results of the PCA computation.</p>
-<p>Click the <code>+</code> icon to view them.</p>
+<p>They are the Principle Components and are lablled PC1 to PC5.</p>
+<p>Click the <code>+</code> icon to view the new list of factors.</p>
 <p><br />
 </p>
 <center>
@@ -131,14 +134,10 @@
 </center>
 <p><br />
 </p>
-<blockquote>
-<p>Help: explaination of what these results are.</p>
-</blockquote>
-<p><br />
-</p>
 <p><strong>Use PCA results in a new visualisation</strong></p>
 <p>To create a new visualisation we must first remove the previous one.</p>
 <p>Click the small <code>X</code> which appears in the corners of the projection grid divisions.</p>
+<p>The resulting view should be an empty projection</p>
 <p><br />
 </p>
 <center>
@@ -146,20 +145,17 @@
 </center>
 <p><br />
 </p>
-<p>The resulting view should be an empty projection</p>
-<p><br />
-</p>
 <p>To create the a new pair-wise projection drag and drop the following factors:</p>
 <p><br />
 </p>
 <p>PCA <code>ds0.PC2</code> to <code>X-Axis</code><br />
 PCA <code>ds0.PC3</code> to <code>Y-Axis</code><br />
-Crabs Data <code>sex</code> to <code>Colors</code> 
+Crabs Data <code>sex</code> to <code>Colors</code><br />
 Crabs Data <code>sp</code> to <code>Colors</code><br />
 </p>
-<p>Save the workflow.</p>
 <p><br />
 </p>
+<p>Save the workflow.</p>
 <p>This creates a visualisation of the PCA results (PC2 and PC3) in a pairwise plot.</p>
 <p>It is color coded to show the main sex/species groupings.</p>
 <p><br />

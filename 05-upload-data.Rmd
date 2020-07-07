@@ -1,6 +1,6 @@
 # Upload data
 
-In this section you will copy the sample data we have providedf and upload it to your project.
+In this section you will copy the sample data we have provided and upload it to your project.
 
 \
 
@@ -8,8 +8,8 @@ __Tercen__ accepts data in the following file types.
 
 File|Description
 ------|---
-__.tsv__ |Tab sperated values
-__.csv__|Comma seperated values
+__.tsv__ |Tab Separated Values
+__.csv__|Comma Separated Values
 
 \
 
@@ -103,7 +103,7 @@ Click `Next`
 
 \
 
-__tercen__ will display the column headers (factors) it has detected from your file and the data type (e.g character, numeric) it has detected in the rows.
+__Tercen__ will display the column headers (factors) it has detected from your file and the data type (e.g character, numeric) it has detected in the rows.
 
 \
 

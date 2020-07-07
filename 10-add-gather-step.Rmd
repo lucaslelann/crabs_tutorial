@@ -2,7 +2,9 @@
 
 In this section we perform a gathering of Principal components.
 
-> explain what a Gather is and why it is used here.
+A Gather is a function to select and match sections of data from multiple sources. 
+
+The selections are combined to form a new data set for following calculations.
 
 \
 
@@ -26,9 +28,7 @@ Re-position it in the workflow.
 
 Right click on the `Gather` Step and select `Edit`
 
-In `Namespace` enter "PCA"
-
->Why?
+In `Namespace` enter "PCA" to indicate where the data came from.
 
 In `Selection Pattern` enter ds0 to filter-select the PCA results.
 

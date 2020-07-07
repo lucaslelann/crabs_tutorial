@@ -89,7 +89,7 @@
 <li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
 <li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
 <li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="visualize-the-pca-as-a-multi-group-pairwise.html"><a href="visualize-the-pca-as-a-multi-group-pairwise.html"><i class="fa fa-check"></i><b>12</b> Visualize the PCA as a multi-group pairwise</a></li>
+<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computations-results.html"><a href="export-your-computations-results.html"><i class="fa fa-check"></i><b>13</b> Export your computations results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -134,10 +134,8 @@
 <p><strong>Understanding the Projection Screen</strong></p>
 <p>The projection screen is made up of zones which display data or allow it to be manipulated.</p>
 <p>The first two to understand are the <strong>factors</strong> list and the <strong>projection grid</strong>.</p>
-<p><br />
-</p>
 <p>Factors are the individual categories of your data which can be manipulated into a visualisation.</p>
-<p>They can be the data you uploaded or the results of a computation performed by an operator.</p>
+<p>They can be the data you uploaded or the results of a computation performed on it.</p>
 <p>Click on the <code>+</code> icon beside <code>Crabs Data</code></p>
 <p>You will see the <strong>factors</strong> listed are the headers of the sample data file we uploaded.</p>
 <p><br />
@@ -147,8 +145,9 @@
 </center>
 <p><br />
 </p>
+<p><strong>The Projection Grid</strong></p>
 <p>The projection grid is where visualisations are created and displayed.</p>
-<p>There are four divisions to a projection grid.</p>
+<p>There are four divisions to the projection grid.</p>
 <p><strong>X-Axis</strong><br />
 <strong>Y-Axis</strong><br />
 <strong>Column</strong><br />
@@ -165,7 +164,8 @@
 <p>Factors are added by drag-and-drop from their list.</p>
 <p><br />
 </p>
-<p>In the central column of the projection screen is the definitions zone.</p>
+<p><strong>Definition Controls</strong></p>
+<p>In the central tab of the projection screen is the definitions zone.</p>
 <p>This is where factors can be dragged and dropped to configure how data is represented on the visualisation.</p>
 <p><br />
 </p>
@@ -175,6 +175,10 @@
 <p><br />
 </p>
 <table>
+<colgroup>
+<col width="66%" />
+<col width="33%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Zone</th>
@@ -184,29 +188,27 @@
 <tbody>
 <tr class="odd">
 <td><strong>Label</strong></td>
-<td>Define which factor provides additional detail to data</td>
+<td>Additional descriptions applied to a factor - used to separate factors</td>
 </tr>
 <tr class="even">
 <td><strong>Colours</strong></td>
-<td>Control vistaulisations by assigning colours to values</td>
+<td>Control visualisations by assigning colors to values</td>
 </tr>
 <tr class="odd">
 <td><strong>Error Bar</strong></td>
-<td>an error bar</td>
+<td>Shows margin of error on calculations (such as Standard Deviation)</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>Help needed here</p>
-</blockquote>
 <p><br />
 </p>
 <p><strong>Make a projection of the Crabs Data</strong></p>
 <p>Drag and drop factors to zones on the projection grid as follows.</p>
-<p><code>observation</code> to <em>column</em>
-<code>measurement</code> to <em>y-axis</em>
-<code>variable</code> to <em>row</em></p>
-<p>Re-size your visualisation by clicking the grid lines and dragging them closer together.</p>
+<p><code>observation</code> to <strong>column</strong><br />
+<code>measurement</code> to <strong>y-axis</strong><br />
+<code>variable</code> to <strong>row</strong><br />
+</p>
+<p>Re-size your visualisation by grabbing the grid lines and dragging them closer together.</p>
 <p><br />
 </p>
 <center>
@@ -215,18 +217,14 @@
 <p><br />
 </p>
 <p>Notice, the <code>variable</code> <strong>factor</strong> is the row and the <code>observations</code> are the columns.</p>
-<p>The default data value sort for a <strong>Tercen</strong> visualisation is Low to High.</p>
-<blockquote>
-<p>Need help on decription line. What has happened here?</p>
-</blockquote>
+<p>By default <strong>Tercen</strong> will sort data from low to high values.</p>
 <p><br />
 </p>
 <p><strong>Configure the data visualisation as a Heatmap</strong></p>
-<p>By changing control settings the data projection can be visualised on differant ways.</p>
-<p>Drag-n-drop the <code>Measurement</code> factor to the <code>Colors</code> zone.</p>
-<blockquote>
-<p>Explaination line here.</p>
-</blockquote>
+<p>By changing control settings the data projection can be visualised on different ways.</p>
+<p>Drag and drop the <code>Measurement</code> factor to the <code>Colors</code> zone.</p>
+<p>A gradient is formed based on the values in the data</p>
+<p>The higher values are assigned the “hot” colors and the lower ones “cold” colors.</p>
 <p>Change the visualisation setting from <code>point</code> to <code>heatmap</code>.</p>
 <p><br />
 </p>
@@ -235,7 +233,17 @@
 </center>
 <p><br />
 </p>
-<p>Congratulations on your first heatmap visual.</p>
+<blockquote>
+<p>Because We assigned <code>Observation</code> to the<code>Column</code> the specimens are listed across from 1 to 200.
+The Heatmap appears to divide into four groups but this is purely visual.
+This happens because the uploaded data was pre-sorted by groups (Blue-Male Blue Female Orange Male and Orange female.
+The Heatmap is not performing a grouping on the <code>Observation</code> field.</p>
+</blockquote>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>Congratulations, you have created your first heatmap visual.</p>
 <p><br />
 </p>
 <p><br />

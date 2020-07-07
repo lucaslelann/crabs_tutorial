@@ -6,8 +6,6 @@ By putting the same factor (i.e. ``variable``) on the row and column zone.
 
 This view is a powerful tool for data visualization.
 
-> explaination line.
-
 \
 
 __Add a data step__
