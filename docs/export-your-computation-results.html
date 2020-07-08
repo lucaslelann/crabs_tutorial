@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial</title>
+  <title>Chapter 13 Export your computation results | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 13 Export your computation results | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 9 Visualize the results of the PCA | The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 13 Export your computation results | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="add-the-pca-operator.html"/>
-<link rel="next" href="add-a-gather-step.html"/>
+<link rel="prev" href="multi-group-pairwise-visualisation.html"/>
+<link rel="next" href="next-steps.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -109,74 +109,34 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="visualize-the-results-of-the-pca" class="section level1">
-<h1><span class="header-section-number">Chapter 9</span> Visualize the results of the PCA</h1>
-<p>Computations made in a data step can become inputs to data steps that are below them in the workflow.</p>
-<p>In <strong>Tercen</strong> both the original data, and the computation results, are passed to the “child” step.</p>
-<p>In this Chapter we will visualize the output of the PCA computation.</p>
-<p>We will use two of the results (<strong>Principal Components</strong>) in a pair-wise plot.</p>
+<div id="export-your-computation-results" class="section level1">
+<h1><span class="header-section-number">Chapter 13</span> Export your computation results</h1>
+<p>In this section you will export the results of the PCA operator computation to a download-able file.</p>
+<p>The file becomes new <strong>tercen</strong> data which can be imported to other projects.</p>
 <p><br />
 </p>
-<p><strong>Add a new data step</strong></p>
+<p><strong>Create and Export Step</strong></p>
 <p>From the workflow builder screen.</p>
-<p>Right Click on the <code>PCA</code> data step to access the long menu</p>
+<p>Right click on the <code>PCA</code> step</p>
 <p>Select <code>Add</code></p>
-<p>Choose <code>Data Step</code></p>
-<p>The projection screen will open.</p>
-<p>You will see it is a copy of the “parent” data step <code>PCA</code> with a new set of <strong>factors</strong></p>
-<p>The new factors are the results of the previous PCA computation step.</p>
-<p>The results (Principle Components) are labeled PC1 to PC5.</p>
-<p>PCs are a number of uncorrelated variables, a score, used to identify clusters of data.</p>
-<p>Click the <code>+</code> icon to view the new list of factors.</p>
+<p>Choose <code>Export</code></p>
+<p>Drag the new export step to the right</p>
+<p>Right click on the <code>Export</code> step</p>
+<p>Select <code>Run</code></p>
+<p>Save the workflow</p>
+<p>Click on “Crabs project” on the link path.</p>
+<p>You will see the data has been made available on the project page.</p>
+<p>It can be downloaded from here with the export icon.</p>
 <p><br />
 </p>
 <center>
-<img src="images/0901_pca_new_factors.png">
-</center>
-<p><br />
-</p>
-<p><strong>Use PCA results in a new visualisation</strong></p>
-<p>To create a new visualisation we must first remove the previous one.</p>
-<p>Click the small <code>X</code> which appears in the corners of the projection grid divisions.</p>
-<p>The resulting view should be an empty projection</p>
-<p><br />
-</p>
-<center>
-<img src="images/0902_pca_clear_grid.gif">
-</center>
-<p><br />
-</p>
-<p>To create the a new pair-wise projection drag and drop the following factors:</p>
-<p><br />
-</p>
-<p>PCA <code>ds0.PC2</code> to <code>X-Axis</code><br />
-PCA <code>ds0.PC3</code> to <code>Y-Axis</code><br />
-Crabs Data <code>sex</code> to <code>Colors</code><br />
-Crabs Data <code>sp</code> to <code>Colors</code><br />
-</p>
-<p><br />
-</p>
-<p>Save the workflow.</p>
-<p>This creates a visualisation of the PCA results (PC2 and PC3) in a pairwise plot.</p>
-<p>It is color coded to show the main sex/species groupings.</p>
-<p><br />
-</p>
-<center>
-<img src="images/0903_pca_pairwise.gif">
-</center>
-<p><br />
-</p>
-<p>Return to the workflow builder screen to rename your data step.</p>
-<p><br />
-</p>
-<center>
-<img src="images/0904_pca_rename.gif">
+<img src="images/1301_export.gif">
 </center>
 <p><br />
 </p>
 <p><br />
 </p>
-<p><strong>Next…</strong> gather the PCA results to use them in a multi-group pairwise projection.</p>
+<p><strong>Next…</strong> further learning steps.</p>
 
 </div>
             </section>
@@ -184,8 +144,8 @@ Crabs Data <code>sp</code> to <code>Colors</code><br />
           </div>
         </div>
       </div>
-<a href="add-the-pca-operator.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="add-a-gather-step.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="multi-group-pairwise-visualisation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="next-steps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

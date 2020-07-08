@@ -1,8 +1,8 @@
-# Export your computations results
+# Export your computation results
 
 In this section you will export the results of the PCA operator computation to a download-able file.
 
-The file is a new __tercen__ table which can be imported to other projects.
+The file becomes new __tercen__ data which can be imported to other projects.
 
 \
 
