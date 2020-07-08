@@ -22,8 +22,6 @@ Click on `Library`
 
 Click on `+ Add operator`
 
-\
-
 A list of the operators available in __Tercen__ appears.
 
 \

@@ -58,13 +58,13 @@ You have now successfully imported the crabs data set into the projects workflow
 
 \
 
-The box that had just appeared in the workflow is called a __step__ 
+The box that you added to the workflow is called a __step__ 
 
-Steps are the fundamental building blocks of your data analysis process.
+Steps are the fundamental building blocks of a data analysis process.
 
-By right clicking a step the long menu appears.
+Right click a step and the `long menu` appears.
 
-This allows you to perform actions on a step.
+The following actions can be performed on a step from the long menu.
 
 \
 
@@ -75,13 +75,11 @@ __Edit__|Takes you to the projection page of the step.
 __Rename__|Change the step name to something more descriptive.
 __Remove__|Delete this step.
 __Duplicate__|Copy the step to make a differant visualisation.
-__Add__| Add a new step which will use the outputs from this step.
+__Add__| Create a new step which will use the outputs from this step.
 
 \
 
 __Saving Workflows__
-
-\
 
 As you make changes to a workflow and perform calculations __Tercen__ will prompt you to save your work by displaying a disk icon beside the name of the workflow.
 

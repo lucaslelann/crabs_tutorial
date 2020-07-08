@@ -4,11 +4,15 @@ As we saw in the previous chapter data projections can be visualised in various 
 
 They can also have computations performed on them.
 
-The results of these computations are new data available for further visualisations.
+The results of these computations are "new data" now available for further visualisations.
 
 This is done in later steps of the workflow.
 
 In this Chapter you will perform a Principle Component Analysis on the sample Crabs data.
+
+\
+
+__Add the PCA Operator to the projection__
 
 The projection screen has a __zone__ where Operators are added.
 
@@ -18,13 +22,11 @@ The projection screen has a __zone__ where Operators are added.
 
 \
 
-__Add the PCA Operator to the projection__
-
 Click `+` 
 
 Select  the `PCA` operator 
 
-(Recall that you previously added this to the Library in Chapter 3)
+_(Recall that you previously added this to the Library in Chapter 3)_
 
 Click on `Run` to activate the operator
 
@@ -42,13 +44,11 @@ Another data step will be needed to view it's results.
 
 \
 
+__Managing Steps on the Workflow Screen__
+
 It is important to take the time to label steps correctly.
 
-Organise your workflow in ways it can be easily understood.
-
-\
-
-__Managing Steps on the Workflow Screen__
+This organises your workflow in ways it can be easily understood.
 
 Return to the workflow page
 
@@ -60,7 +60,7 @@ A green dot appears in the top right corner.
 
 This is to tell you that the calculation has been performed.
 
-You can clear your calculations or re-run them using the long menu.
+You can clear your calculations, or re-run them, using the long menu.
 
 Steps can be dragged into new positions to make your workflow more readable.
 

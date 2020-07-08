@@ -2,13 +2,13 @@
 
 In this section we will...
 
-Add a data analysis step to our workflow.
+* Add a data analysis step to our workflow.
 
-Review the projection screen.
+* Review the projection screen.
 
-Assign factors to make a projection of the data.
+* Assign factors to make a projection of the data.
 
-Visualize our projection as a Heatmap.
+* Visualize our projection as a Heatmap.
 
 \
 
@@ -22,7 +22,7 @@ Select Data Step
 
 Click `Ok`
 
-You will be taken to the __Projection Screen__
+You will be taken to the __Cross-tab Projection Screen__
 
 \
 
@@ -30,7 +30,7 @@ You will be taken to the __Projection Screen__
 
 \
 
-__Understanding the Projection Screen__
+__Understanding the Cross-tab Projection Screen__
 
 The projection screen is made up of zones which display data or allow it to be manipulated.
 
@@ -38,7 +38,7 @@ The first two to understand are the __factors__ list and the __projection grid__
 
 Factors are the individual categories of your data which can be manipulated into a visualisation. 
 
-They can be the data you uploaded or the results of a computation performed on it.
+A Factor can be a variable in the data you uploaded or the results of a computation performed on it.
 
 Click on the `+` icon beside `Crabs Data`
 
@@ -68,9 +68,9 @@ __Row__\
 
 \
 
-By adding factors to these zones a projection is created and visualisations can be made of it.
+By adding factors to these zones a projection is created and visualisations are made from it.
 
-Factors are added by drag-and-drop from their list.
+Factors are added by drag-and-drop from the list.
 
 \
 
@@ -78,7 +78,7 @@ __Definition Controls__
 
 In the central tab of the projection screen is the definitions zone.
 
-This is where factors can be dragged and dropped to configure how data is represented on the visualisation.
+Drag and Drop factors to the tab name to configure how data is represented on the visualisation.
 
 \
 
@@ -88,9 +88,9 @@ This is where factors can be dragged and dropped to configure how data is repres
 
 Zone|Description
 ------|---
-__Label__ |Additional descriptions applied to a factor - used to separate factors
+__Label__ |Additional description or seperation applied to a factor.
 __Colours__|Control visualisations by assigning colors to values
-__Error Bar__|Shows margin of error on calculations (such as Standard Deviation)
+__Error Bar__|Shows margin of error on calculations (e.g Standard Deviation)
 
 \
 
@@ -115,7 +115,7 @@ Notice, the `variable` __factor__ is the row and the `observations` are the colu
 
 By default __Tercen__ will sort data from low to high values.
 
-
+We have visualised the 5 measurements (rows) against the 200 crab specimens columns.
 
 \
 

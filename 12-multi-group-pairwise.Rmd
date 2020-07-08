@@ -2,9 +2,9 @@
 
 In this section you create a multi-group pairwise visual of the PCA calculation.
 
-By putting the same factor (i.e. ``variable``) on the row and column zone.
+This technique puts the same factor (`variable`) on the row and column zone.
 
-This view is a powerful tool for data visualization.
+The resulting view is a powerful tool for data visualization.
 
 \
 
@@ -22,7 +22,7 @@ The projection screen will open.
 
 Clear the projection grid by clicking `x` on the zones.
 
-Drag and drop these factors into the empty grid
+Drag and drop the following factors into the grid...
 
 \
 
@@ -74,5 +74,5 @@ You can drag it into position to make it more view-able.
 
 \
 
-__Next__ make the results of a computation exportable.
+__Next...__ make the results of a computation exportable.
 

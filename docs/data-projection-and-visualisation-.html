@@ -112,10 +112,12 @@
 <div id="data-projection-and-visualisation." class="section level1">
 <h1><span class="header-section-number">Chapter 7</span> Data projection and visualisation.</h1>
 <p>In this section we will…</p>
-<p>Add a data analysis step to our workflow.</p>
-<p>Review the projection screen.</p>
-<p>Assign factors to make a projection of the data.</p>
-<p>Visualize our projection as a Heatmap.</p>
+<ul>
+<li><p>Add a data analysis step to our workflow.</p></li>
+<li><p>Review the projection screen.</p></li>
+<li><p>Assign factors to make a projection of the data.</p></li>
+<li><p>Visualize our projection as a Heatmap.</p></li>
+</ul>
 <p><br />
 </p>
 <p><strong>Add an analysis Data Step</strong></p>
@@ -123,7 +125,7 @@
 <p>Click <code>Add</code></p>
 <p>Select Data Step</p>
 <p>Click <code>Ok</code></p>
-<p>You will be taken to the <strong>Projection Screen</strong></p>
+<p>You will be taken to the <strong>Cross-tab Projection Screen</strong></p>
 <p><br />
 </p>
 <center>
@@ -131,11 +133,11 @@
 </center>
 <p><br />
 </p>
-<p><strong>Understanding the Projection Screen</strong></p>
+<p><strong>Understanding the Cross-tab Projection Screen</strong></p>
 <p>The projection screen is made up of zones which display data or allow it to be manipulated.</p>
 <p>The first two to understand are the <strong>factors</strong> list and the <strong>projection grid</strong>.</p>
 <p>Factors are the individual categories of your data which can be manipulated into a visualisation.</p>
-<p>They can be the data you uploaded or the results of a computation performed on it.</p>
+<p>A Factor can be a variable in the data you uploaded or the results of a computation performed on it.</p>
 <p>Click on the <code>+</code> icon beside <code>Crabs Data</code></p>
 <p>You will see the <strong>factors</strong> listed are the headers of the sample data file we uploaded.</p>
 <p><br />
@@ -160,13 +162,13 @@
 </center>
 <p><br />
 </p>
-<p>By adding factors to these zones a projection is created and visualisations can be made of it.</p>
-<p>Factors are added by drag-and-drop from their list.</p>
+<p>By adding factors to these zones a projection is created and visualisations are made from it.</p>
+<p>Factors are added by drag-and-drop from the list.</p>
 <p><br />
 </p>
 <p><strong>Definition Controls</strong></p>
 <p>In the central tab of the projection screen is the definitions zone.</p>
-<p>This is where factors can be dragged and dropped to configure how data is represented on the visualisation.</p>
+<p>Drag and Drop factors to the tab name to configure how data is represented on the visualisation.</p>
 <p><br />
 </p>
 <center>
@@ -175,10 +177,6 @@
 <p><br />
 </p>
 <table>
-<colgroup>
-<col width="66%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Zone</th>
@@ -188,7 +186,7 @@
 <tbody>
 <tr class="odd">
 <td><strong>Label</strong></td>
-<td>Additional descriptions applied to a factor - used to separate factors</td>
+<td>Additional description or seperation applied to a factor.</td>
 </tr>
 <tr class="even">
 <td><strong>Colours</strong></td>
@@ -196,7 +194,7 @@
 </tr>
 <tr class="odd">
 <td><strong>Error Bar</strong></td>
-<td>Shows margin of error on calculations (such as Standard Deviation)</td>
+<td>Shows margin of error on calculations (e.g Standard Deviation)</td>
 </tr>
 </tbody>
 </table>
@@ -234,16 +232,13 @@
 <p><br />
 </p>
 <blockquote>
-<p>Because We assigned <code>Observation</code> to the<code>Column</code> the specimens are listed across from 1 to 200.
-The Heatmap appears to divide into four groups but this is purely visual.
-This happens because the uploaded data was pre-sorted by groups (Blue-Male Blue Female Orange Male and Orange female.
-The Heatmap is not performing a grouping on the <code>Observation</code> field.</p>
+<p>Because We assigned <code>Observation</code> to<code>Column</code> the specimens are listed across from 1 to 200.
+The Heatmap appears to divide them into four groups but this is purely visual.
+It happened because the uploaded data was pre-sorted into groups (Blue-Male Blue-Female Orange-Male and Orange-Female. The Heatmap is not performing a grouping on the <code>Observation</code> field.</p>
 </blockquote>
 <p><br />
 </p>
-<p><br />
-</p>
-<p>Congratulations, you have created your first heatmap visual.</p>
+<p>Congratulations, you have created your first Heatmap visual.</p>
 <p><br />
 </p>
 <p><br />

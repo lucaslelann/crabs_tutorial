@@ -1,18 +1,21 @@
 # Next steps
 
-Thank you for completing the __Tercen__ Crabs Tutorial.
+Thank you for completing the __Tercen Crabs Tutorial__.
 
-You will have learned some of the powerful visualisations __Tercen__ offers for data.
+You will have learned some of the powerful data visualisations that __Tercen__ offers.
 
-If you would like to give feedback on this document please log an [__issue__](https://github.com/tercen/crabs_tutorial/issues) on our GitHub repository.
+\
 
 There is much more to discover about the software. 
 
 Here are some ideas on what to do next:
 
-Try to upload different data sets and play with making different projection visuals
+Upload different data sets and try making your own projection visuals
 
-Complete our documentation set by reading the online [__Tercen User Manual__](https://tercen.github.io/tercen-book/)
+You can refer to the [__Tercen User Manual__](https://tercen.github.io/tercen-book/) for more technical instructions.
 
-[__Book a one-2-one session__](https://calendly.com/tercen-demo/tercen-demo) for further guidance  
+Book a free [__one-to-one session__](https://calendly.com/tercen-demo/tercen-demo) for further guidance. 
 
+\
+
+If you would like to give feedback on this document please log an [__issue__](https://github.com/tercen/crabs_tutorial/issues) on our GitHub repository.

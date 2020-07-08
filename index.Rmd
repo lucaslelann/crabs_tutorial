@@ -23,9 +23,9 @@ In this tutorial you will learn how to conduct a research project on __Tercen__.
 
 This step-by-step guide outlines how to upload, view, compute, and share data on __Tercen__.
 
-In our training scenario we will use a multivariate data set of morphological  _measurements_ of two species of _Leptograpsus Crabs_ 
+In this training scenario we will use a multivariate data set of morphological  _measurements_ of two species of _Leptograpsus Crabs_ 
 
-We will apply the PCA (Principle Component Analysis) Operator to analyse this data. 
+We will apply the PCA (Principle Component Analysis) Operator to analyse the data. 
 
 \
 
@@ -38,16 +38,14 @@ The following steps are covered:
 * Build an analysis __workflow__ 
 * __Calculate__ data with PCA
 * Use the __outputs__ of the previous calculations in new workflow steps
-* Gather
+* __Gather__ data into a new table
 * __Export__ the results
 
 \
 
-\
+Our example dataset of morphological  measurements of two species of Leptograpsus Crabs was collected at Fremantle, W. Australia.
 
-Our example data set of morphological  measurements of two species of Leptograpsus Crabs was collected at Fremantle, W. Australia. 
-
-(Original research paper can be read here. [Mahon 1974](https://www.publish.csiro.au/zo/ZO9740417))
+(Original research paper can be read here. [__Mahon 1974__](https://www.publish.csiro.au/zo/ZO9740417))
 
 \
 

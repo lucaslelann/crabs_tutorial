@@ -32,7 +32,7 @@ Save your workflow
 
 \
 
-__Create a pairwise projection of the principle components__ 
+__Create a pairwise projection of the gathered Principle Components__ 
 
 Drag and drop the following factors to the projection grid zones.
 
@@ -51,17 +51,17 @@ Re-size the grid lines to make the projection view-able
 
 Save the workflow
 
-Color is used to indicate what data point belongs to a female or male (gender is an observation) crab specimen.
+Putting two factors on Color combines to indicate the crab specimens by their groups. (OM OF BM BF).
 
 Placing `Observation` on `Label` separates the data points into individual crabs so they can be plotted.
 
 \
 
-You have created a pairwise projection of all the Principal Components. 
+<center><img src="images/1102_pairwise_principle_components.gif"></center>
 
 \
 
-<center><img src="images/1102_pairwise_principle_components.gif"></center>
+You have created a pairwise projection of all the Principal Components. 
 
 \
 

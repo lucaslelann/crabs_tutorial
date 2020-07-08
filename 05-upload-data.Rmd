@@ -1,6 +1,6 @@
 # Upload data
 
-In this section you will copy the sample data we have provided and upload it to your project.
+In this section you will copy some sample data and upload it to your project.
 
 \
 
@@ -15,7 +15,11 @@ __.csv__|Comma Separated Values
 
 Data can be uploaded in either `wide` format or `long` format.
 
-Most people work in a `Wide` data format. Usually with samples in rows and individual measurements in columns. This is the most typical way we use spreadsheet programs.
+Most people work in a `Wide` data format. 
+
+Usually with samples in rows and individual measurements in columns. 
+
+This is the most typical way we use a spreadsheet program.
 
 For large data sets, with many multiples of measurement criteria, this can become unwieldy. 
 
@@ -51,12 +55,12 @@ Data is recorded under six headings (called __factors__).
 
 Factor|Description
 ------|---
-sp |species, __B__ (<span style="color:blue">Blue Crab</span>) or __O__ (<span style="color:orange">Orange Crab</span>) 
+sp |Species, __B__ (<span style="color:blue">Blue Crab</span>) or __O__ (<span style="color:orange">Orange Crab</span>) 
 sex|__M__ (Male) or __F__ (Female)
-index|index 1 to 50 within each of the four groups (2 sex and 2 species)
+index|Index 1 to 50 within each of the four groups (2 sex and 2 species)
 variable|Five crab physical traits can be measured `FL`, `RW`, `CL`, `CW` and `BD`
-measurement| the value in mm of the `variable`
-observation| index 1 to 200 observations for each variable
+measurement| The value in mm of the `variable`
+observation| A crab specimen. Index 1-200 measurements of each variable
 
 \
 
@@ -70,10 +74,11 @@ __Crab variable descriptions__
 
 \
 
+
 ## Upload a data file
 
 
-From your crabs projects home page. 
+From your crabs project home page. 
 
 \
 

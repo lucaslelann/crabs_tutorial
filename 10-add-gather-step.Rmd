@@ -1,10 +1,10 @@
 # Add a Gather Step
 
-In this section we perform a gathering of Principal components.
+In this section we perform a gathering of the Principal Components.
 
-A Gather is a function to select and match sections of data from multiple sources. 
+A Gather is a function that allows partial data from multiple sources be selected. 
 
-The selections are combined to form a new data set for following calculations.
+The selections are combined to form a new dataset for following calculations.
 
 \
 

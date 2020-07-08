@@ -1,18 +1,18 @@
 # Visualize the results of the PCA
 
-Computations made in a data step can become the inputs to data steps that are attached to them in the workflow.
+Computations made in a data step can become inputs to data steps that are below them in the workflow.
 
 In __Tercen__ both the original data, and the computation results, are passed to the "child" step.
 
 In this Chapter we will visualize the output of the PCA computation. 
 
-We will use two of the results  (Principal Components) in a pair-wise plot. 
+We will use two of the results  (__Principal Components__) in a pair-wise plot. 
 
 \
 
 __Add a new data step__
 
-from the workflow builder screen.
+From the workflow builder screen.
 
 Right Click on the `PCA` data step to access the long menu
 
@@ -24,11 +24,11 @@ The projection screen will open.
 
 You will see it is a copy of the "parent" data step `PCA` with a new set of __factors__
 
-The new factors are the results of the PCA computation.
+The new factors are the results of the previous PCA computation step.
 
-They are the Principle Components and are labeled PC1 to PC5.
+The results (Principle Components) are labeled PC1 to PC5.
 
-PCs are a number of uncorrelated variables, a score, to identify clusters.
+PCs are a number of uncorrelated variables, a score, used to identify clusters of data.
 
 Click the `+` icon to view the new list of factors.
 

@@ -26,7 +26,9 @@ Click `OK`
 
 \
 
-You have now created a team. It is located in your teams list.
+You have now created a team. 
+
+It is located in your teams list.
 
 \
 

@@ -1,6 +1,6 @@
 # Create the Crabs project
 
-In this section you will create a project for your team to work on.
+In this section you will create a project for the team to work on.
 
 \
 
@@ -10,7 +10,7 @@ From your personal home page.
 
 Click on the `Teams` tab
 
-Click on your Crab team icom.
+Click on your Crab team icon.
 
 You will see the Team home page.
 
@@ -50,11 +50,11 @@ __New data set__ |Data files are uploaded here
 __New workflow__|Takes you to the workflow builder page
 __New file__|Write notes and findings on the project
 __Import file__|Upload a supporting document
-__Import workflow__|Add a workflow created in another project
+__Import workflow__|Add a workflow cloned from another project
 __Project Settings__|Change your description or public status
 
 \
 
 \
 
-__Next...___ Upload a data set to your project.
+__Next...__ Upload a data set to your project.

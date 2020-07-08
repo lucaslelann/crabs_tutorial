@@ -111,21 +111,22 @@
             <section class="normal" id="section-">
 <div id="visualize-the-results-of-the-pca" class="section level1">
 <h1><span class="header-section-number">Chapter 9</span> Visualize the results of the PCA</h1>
-<p>Computations made in a data step can become the inputs to data steps that are attached to them in the workflow.</p>
+<p>Computations made in a data step can become inputs to data steps that are below them in the workflow.</p>
 <p>In <strong>Tercen</strong> both the original data, and the computation results, are passed to the “child” step.</p>
 <p>In this Chapter we will visualize the output of the PCA computation.</p>
-<p>We will use two of the results (Principal Components) in a pair-wise plot.</p>
+<p>We will use two of the results (<strong>Principal Components</strong>) in a pair-wise plot.</p>
 <p><br />
 </p>
 <p><strong>Add a new data step</strong></p>
-<p>from the workflow builder screen.</p>
+<p>From the workflow builder screen.</p>
 <p>Right Click on the <code>PCA</code> data step to access the long menu</p>
 <p>Select <code>Add</code></p>
 <p>Choose <code>Data Step</code></p>
 <p>The projection screen will open.</p>
 <p>You will see it is a copy of the “parent” data step <code>PCA</code> with a new set of <strong>factors</strong></p>
-<p>The new factors are the results of the PCA computation.</p>
-<p>They are the Principle Components and are lablled PC1 to PC5.</p>
+<p>The new factors are the results of the previous PCA computation step.</p>
+<p>The results (Principle Components) are labeled PC1 to PC5.</p>
+<p>PCs are a number of uncorrelated variables, a score, used to identify clusters of data.</p>
 <p>Click the <code>+</code> icon to view the new list of factors.</p>
 <p><br />
 </p>
