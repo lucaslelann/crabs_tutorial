@@ -29,7 +29,7 @@ __Tercen__ works in `long` format and will convert `wide` format data to long du
 
 \
 
-## About the exmple data.
+## About the example data {-}
 
 The example data set is available online in a __Tercen__ github repository. 
 
@@ -75,7 +75,7 @@ __Crab variable descriptions__
 \
 
 
-## Upload a data file
+## Upload a data file {-}
 
 
 From your crabs project home page. 

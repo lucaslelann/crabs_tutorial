@@ -2,8 +2,9 @@ library(magick)
 library(magrittr)
 library(stringr)
 
+# copy the existing .png to raw prefix images
 
-all_images <- list.files('images', pattern = "raw_*.png")
+all_images <- list.files('images', pattern = "*.png")
 new_names <- paste0("raw_", all_images)
 
 file_location <- paste("images\\",all_images, sep = "")
@@ -11,12 +12,12 @@ new_file_location <- paste("images\\",new_names, sep = "")
 
 file.rename(file_location, new_file_location )
 
-for (i in (1:length(new_file_location))){
-  print(i)
-  input_img <- image_read(new_file_location[i])
-  output_img <- image_shadow(input_img, color = "black", bg = "white", geometry = "50x10+30+30", operator = "atop", offset = "+20+20")
-  image_write(output_img, file_location[i])
-}
+# for (i in (1:length(new_file_location))){
+#   print(i)
+#   input_img <- image_read(new_file_location[i])
+#   output_img <- image_shadow(input_img, color = "black", bg = "white", geometry = "50x10+30+30", operator = "atop", offset = "+20+20")
+#   image_write(output_img, file_location[i])
+# }
 
 
 all_raw_images <- list.files('images', pattern = "raw_")
