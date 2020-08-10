@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 10 Add a Gather Step | The Tercen Crabs Tutorial</title>
+  <title>Chapter 11 Add a Gather Step | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 10 Add a Gather Step | The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 11 Add a Gather Step | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 10 Add a Gather Step | The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 11 Add a Gather Step | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -86,11 +86,11 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
 <li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
-<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
-<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
-<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
-<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="8" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>8</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="9" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>9</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="10" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>10</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="11" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>11</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="12" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>12</b> Visualize gathered PCA results</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computation-results.html"><a href="export-your-computation-results.html"><i class="fa fa-check"></i><b>13</b> Export your computation results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -111,10 +111,11 @@
 
             <section class="normal" id="section-">
 <div id="add-a-gather-step" class="section level1">
-<h1><span class="header-section-number">Chapter 10</span> Add a Gather Step</h1>
+<h1><span class="header-section-number">Chapter 11</span> Add a Gather Step</h1>
+<p>Some calculations require data to be in a long format to work.</p>
 <p>In this section we perform a gathering of the Principal Components.</p>
-<p>A Gather is a function that allows partial data from multiple sources be selected.</p>
-<p>The selections are combined to form a new dataset for following calculations.</p>
+<p>by gathering the principal components we can then use them in a block for a visualization</p>
+<p>This gather is done so a multi-pairwise comparison can be done with the PCA results.</p>
 <p><br />
 </p>
 <p><strong>Add a gather step to a workflow</strong></p>
@@ -136,11 +137,6 @@
 <p>Click the <code>Crabs Workflow</code> link to return to the workflow builder screen.</p>
 <p>Right Click the <code>Gather</code> step and select <code>Run</code></p>
 <p>Save the workflow</p>
-<p><br />
-</p>
-<center>
-<img src="images/1002_gather_select.gif">
-</center>
 <p><br />
 </p>
 <p>The gather step is now configured.</p>

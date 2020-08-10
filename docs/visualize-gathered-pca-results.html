@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Visualize gathered PCA results | The Tercen Crabs Tutorial</title>
+  <title>Chapter 12 Visualize gathered PCA results | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Visualize gathered PCA results | The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 12 Visualize gathered PCA results | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Visualize gathered PCA results | The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 12 Visualize gathered PCA results | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="add-a-gather-step.html"/>
-<link rel="next" href="multi-group-pairwise-visualisation.html"/>
+<link rel="next" href="export-your-computation-results.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -86,11 +86,11 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
 <li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
-<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
-<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
-<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
-<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="8" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>8</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="9" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>9</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="10" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>10</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="11" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>11</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="12" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>12</b> Visualize gathered PCA results</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computation-results.html"><a href="export-your-computation-results.html"><i class="fa fa-check"></i><b>13</b> Export your computation results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -111,8 +111,9 @@
 
             <section class="normal" id="section-">
 <div id="visualize-gathered-pca-results" class="section level1">
-<h1><span class="header-section-number">Chapter 11</span> Visualize gathered PCA results</h1>
+<h1><span class="header-section-number">Chapter 12</span> Visualize gathered PCA results</h1>
 <p>In this section you create a pairwise visual of the Principal Components collected in the <code>Gather</code> step.</p>
+<p>All Principal Components will be plotted against each other in a multi-pairwise visualization.</p>
 <p><br />
 </p>
 <p><strong>Add a new data step</strong></p>
@@ -121,11 +122,7 @@
 <p>Select <code>Add</code></p>
 <p>Choose <code>Data step</code></p>
 <p>This will create a new child step.</p>
-<p>Rename the new <code>Data step</code> to “Pairwise PCA”</p>
-<p>Right Click <code>Pairwise PCA</code></p>
-<p>Select <code>Edit</code></p>
 <p>Clear the projection grid by clicking <code>X</code></p>
-<p>Save your workflow</p>
 <p><br />
 </p>
 <center>
@@ -141,20 +138,18 @@
 <code>PCA.variable</code> to <strong>column</strong><br />
 <code>PCA.variable</code> to <strong>row</strong><br />
 <code>observation</code> to <strong>labels</strong><br />
-<code>sp</code> to <strong>Colors</strong><br />
+<code>Color</code> to <strong>Colors</strong><br />
 <code>sex</code> to <strong>Colors</strong><br />
 </p>
 <p><br />
 </p>
-<p>Re-size the grid lines to make the projection view-able</p>
-<p>Save the workflow</p>
-<p>Putting two factors on Color combines to indicate the crab specimens by their groups. (OM OF BM BF).</p>
+<p>Putting two factors on Color combines them to indicate the crab specimens by their groups. (Orange Male, Blue Female etc).</p>
 <p>Placing <code>Observation</code> on <code>Label</code> separates the data points into individual crabs so they can be plotted.</p>
+<p>Re-size the grid lines to make the projection view-able</p>
 <p><br />
 </p>
-<center>
-<img src="images/1102_pairwise_principle_components.gif">
-</center>
+<p>Save the workflow</p>
+<p>Rename the new <code>Data step</code> to “Multi PC Pairwise”</p>
 <p><br />
 </p>
 <p>You have created a pairwise projection of all the Principal Components.</p>
@@ -162,7 +157,7 @@
 </p>
 <p><br />
 </p>
-<p><strong>Next…</strong> you will create a multi-pairwise projection of the Crabs data.</p>
+<p><strong>Next…</strong> create an export step for the PCS results.</p>
 
 </div>
             </section>
@@ -171,7 +166,7 @@
         </div>
       </div>
 <a href="add-a-gather-step.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="multi-group-pairwise-visualisation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="export-your-computation-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

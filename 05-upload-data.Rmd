@@ -3,39 +3,17 @@
 In this section you will copy some sample data and upload it to your project.
 
 \
-
-__Tercen__ accepts data in the following file types.
-
-File|Description
-------|---
-__.tsv__ |Tab Separated Values
-__.csv__|Comma Separated Values
-
-\
-
-Data can be uploaded in either `wide` format or `long` format.
-
-Most people work in a `Wide` data format. 
-
-Usually with samples in rows and individual measurements in columns. 
-
-This is the most typical way we use a spreadsheet program.
-
-For large data sets, with many multiples of measurement criteria, this can become unwieldy. 
-
-It is often necessary to convert from a more "people friendly" `wide` format to a more "machine friendly" `long` format.
-
-__Tercen__ works in `long` format and will convert `wide` format data to long during the upload process.
-
-\
-
-## About the example data {-}
-
 The example data set is available online in a __Tercen__ github repository. 
 
 Right click on this link --> [__Sample File__](https://raw.githubusercontent.com/tercen/crabs_dataset/master/data/crabs_long.csv) and select `Save link as...`
 
 This will download a file to your computer called `crabs_long.csv`
+
+\
+
+## About the example data {-}
+
+
 
 \
 
@@ -47,20 +25,24 @@ __Crab data description:__
 
 The data set is called _Crabs_ and it is in a _long_ format. 
 
-The file contains 1000 measurements of crab physical traits. 
+Long format means that each row of data is a single measurement rather than an individual crab.
 
-Data is recorded under six headings (called __factors__).
+The file contains 1000 records. 
+
+200 Crabs where 5 physical traits each were measured
+
+Data is recorded under five headings (called __factors__).
 
 \
 
 Factor|Description
 ------|---
-sp |Species, __B__ (<span style="color:blue">Blue Crab</span>) or __O__ (<span style="color:orange">Orange Crab</span>) 
+observation| A crab specimen. Numbered 1-200
+Color |__B__ (<span style="color:blue">Blue Crab</span>) or __O__ (<span style="color:orange">Orange Crab</span>) 
 sex|__M__ (Male) or __F__ (Female)
-index|Index 1 to 50 within each of the four groups (2 sex and 2 species)
 variable|Five crab physical traits can be measured `FL`, `RW`, `CL`, `CW` and `BD`
 measurement| The value in mm of the `variable`
-observation| A crab specimen. Index 1-200 measurements of each variable
+
 
 \
 

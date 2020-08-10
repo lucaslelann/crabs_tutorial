@@ -36,7 +36,7 @@ The projection screen is made up of zones which display data or allow it to be m
 
 The first two to understand are the __factors__ list and the __projection grid__.
 
-Factors are the individual categories of your data which can be manipulated into a visualisation. 
+Factors are the individual categories of your data which can be manipulated into a visualization. 
 
 A Factor can be a variable in the data you uploaded or the results of a computation performed on it.
 
@@ -76,9 +76,9 @@ Factors are added by drag-and-drop from the list.
 
 __Definition Controls__
 
-In the central tab of the projection screen is the definitions zone.
+In the central tab of the projection screen is the configuration panel.
 
-Drag and Drop factors to the tab name to configure how data is represented on the visualisation.
+Drag and Drop factors to the tab name to configure how data is represented on the visualization.
 
 \
 
@@ -88,7 +88,7 @@ Drag and Drop factors to the tab name to configure how data is represented on th
 
 Zone|Description
 ------|---
-__Label__ |Additional description or seperation applied to a factor.
+__Label__ |Additional description or separation applied to a factor.
 __Colours__|Control visualisations by assigning colors to values
 __Error Bar__|Shows margin of error on calculations (e.g Standard Deviation)
 
@@ -103,7 +103,7 @@ Drag and drop factors to zones on the projection grid as follows.
 `variable` to __row__\
 
 
-Re-size your visualisation by grabbing the grid lines and dragging them closer together.
+Re-size your visualization by grabbing the grid lines and dragging them closer together.
 
 \
 
@@ -137,16 +137,10 @@ Change the visualisation setting from `point` to `heatmap`.
 
 \
 
-> Because We assigned `Observation` to`Column` the specimens are listed across from 1 to 200.
-The Heatmap appears to divide them into four groups but this is purely visual.
-It happened because the uploaded data was pre-sorted into groups (Blue-Male Blue-Female Orange-Male and Orange-Female. The Heatmap is not performing a grouping on the `Observation` field.
-
-\
-
-Congratulations, you have created your first Heatmap visual. 
+Congratulations, you have created a Heatmap visual. 
 
 \
 
 \
 
-__Next...__ analyze the data by performing a __PCA__
+__Next...__ analyze the data by performing a multi-pairwaise comparison

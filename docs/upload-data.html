@@ -86,11 +86,11 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
 <li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
-<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
-<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
-<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
-<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="8" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>8</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="9" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>9</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="10" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>10</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="11" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>11</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="12" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>12</b> Visualize gathered PCA results</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computation-results.html"><a href="export-your-computation-results.html"><i class="fa fa-check"></i><b>13</b> Export your computation results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -114,42 +114,13 @@
 <h1><span class="header-section-number">Chapter 5</span> Upload data</h1>
 <p>In this section you will copy some sample data and upload it to your project.</p>
 <p><br />
-</p>
-<p><strong>Tercen</strong> accepts data in the following file types.</p>
-<table>
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>.tsv</strong></td>
-<td>Tab Separated Values</td>
-</tr>
-<tr class="even">
-<td><strong>.csv</strong></td>
-<td>Comma Separated Values</td>
-</tr>
-</tbody>
-</table>
-<p><br />
-</p>
-<p>Data can be uploaded in either <code>wide</code> format or <code>long</code> format.</p>
-<p>Most people work in a <code>Wide</code> data format.</p>
-<p>Usually with samples in rows and individual measurements in columns.</p>
-<p>This is the most typical way we use a spreadsheet program.</p>
-<p>For large data sets, with many multiples of measurement criteria, this can become unwieldy.</p>
-<p>It is often necessary to convert from a more “people friendly” <code>wide</code> format to a more “machine friendly” <code>long</code> format.</p>
-<p><strong>Tercen</strong> works in <code>long</code> format and will convert <code>wide</code> format data to long during the upload process.</p>
+The example data set is available online in a <strong>Tercen</strong> github repository.</p>
+<p>Right click on this link –&gt; <a href="https://raw.githubusercontent.com/tercen/crabs_dataset/master/data/crabs_long.csv"><strong>Sample File</strong></a> and select <code>Save link as...</code></p>
+<p>This will download a file to your computer called <code>crabs_long.csv</code></p>
 <p><br />
 </p>
 <div id="about-the-example-data" class="section level2 unnumbered">
 <h2>About the example data</h2>
-<p>The example data set is available online in a <strong>Tercen</strong> github repository.</p>
-<p>Right click on this link –&gt; <a href="https://raw.githubusercontent.com/tercen/crabs_dataset/master/data/crabs_long.csv"><strong>Sample File</strong></a> and select <code>Save link as...</code></p>
-<p>This will download a file to your computer called <code>crabs_long.csv</code></p>
 <p><br />
 </p>
 <p><strong>Crab data description:</strong></p>
@@ -159,8 +130,10 @@
 <p><br />
 </p>
 <p>The data set is called <em>Crabs</em> and it is in a <em>long</em> format.</p>
-<p>The file contains 1000 measurements of crab physical traits.</p>
-<p>Data is recorded under six headings (called <strong>factors</strong>).</p>
+<p>Long format means that each row of data is a single measurement rather than an individual crab.</p>
+<p>The file contains 1000 records.</p>
+<p>200 Crabs where 5 physical traits each were measured</p>
+<p>Data is recorded under five headings (called <strong>factors</strong>).</p>
 <p><br />
 </p>
 <table>
@@ -172,16 +145,16 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>sp</td>
-<td>Species, <strong>B</strong> (<span style="color:blue">Blue Crab</span>) or <strong>O</strong> (<span style="color:orange">Orange Crab</span>)</td>
+<td>observation</td>
+<td>A crab specimen. Numbered 1-200</td>
 </tr>
 <tr class="even">
-<td>sex</td>
-<td><strong>M</strong> (Male) or <strong>F</strong> (Female)</td>
+<td>Color</td>
+<td><strong>B</strong> (<span style="color:blue">Blue Crab</span>) or <strong>O</strong> (<span style="color:orange">Orange Crab</span>)</td>
 </tr>
 <tr class="odd">
-<td>index</td>
-<td>Index 1 to 50 within each of the four groups (2 sex and 2 species)</td>
+<td>sex</td>
+<td><strong>M</strong> (Male) or <strong>F</strong> (Female)</td>
 </tr>
 <tr class="even">
 <td>variable</td>
@@ -190,10 +163,6 @@
 <tr class="odd">
 <td>measurement</td>
 <td>The value in mm of the <code>variable</code></td>
-</tr>
-<tr class="even">
-<td>observation</td>
-<td>A crab specimen. Index 1-200 measurements of each variable</td>
 </tr>
 </tbody>
 </table>

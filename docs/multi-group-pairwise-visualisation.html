@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial</title>
+  <title>Chapter 8 Multi-group pairwise visualisation | The Tercen Crabs Tutorial</title>
   <meta name="description" content="This is a tutorial to create the Crabs project" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
+  <meta property="og:title" content="Chapter 8 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 12 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
+  <meta name="twitter:title" content="Chapter 8 Multi-group pairwise visualisation | The Tercen Crabs Tutorial" />
   
   <meta name="twitter:description" content="This is a tutorial to create the Crabs project" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="visualize-gathered-pca-results.html"/>
-<link rel="next" href="export-your-computation-results.html"/>
+<link rel="prev" href="data-projection-and-visualisation-.html"/>
+<link rel="next" href="add-the-pca-operator.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -86,11 +86,11 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="create-a-workflow.html"><a href="create-a-workflow.html"><i class="fa fa-check"></i><b>6</b> Create a workflow</a></li>
 <li class="chapter" data-level="7" data-path="data-projection-and-visualisation-.html"><a href="data-projection-and-visualisation-.html"><i class="fa fa-check"></i><b>7</b> Data projection and visualisation.</a></li>
-<li class="chapter" data-level="8" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>8</b> Add the PCA Operator</a></li>
-<li class="chapter" data-level="9" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>9</b> Visualize the results of the PCA</a></li>
-<li class="chapter" data-level="10" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>10</b> Add a Gather Step</a></li>
-<li class="chapter" data-level="11" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>11</b> Visualize gathered PCA results</a></li>
-<li class="chapter" data-level="12" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>12</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="8" data-path="multi-group-pairwise-visualisation.html"><a href="multi-group-pairwise-visualisation.html"><i class="fa fa-check"></i><b>8</b> Multi-group pairwise visualisation</a></li>
+<li class="chapter" data-level="9" data-path="add-the-pca-operator.html"><a href="add-the-pca-operator.html"><i class="fa fa-check"></i><b>9</b> Add the PCA Operator</a></li>
+<li class="chapter" data-level="10" data-path="visualize-the-results-of-the-pca.html"><a href="visualize-the-results-of-the-pca.html"><i class="fa fa-check"></i><b>10</b> Visualize the results of the PCA</a></li>
+<li class="chapter" data-level="11" data-path="add-a-gather-step.html"><a href="add-a-gather-step.html"><i class="fa fa-check"></i><b>11</b> Add a Gather Step</a></li>
+<li class="chapter" data-level="12" data-path="visualize-gathered-pca-results.html"><a href="visualize-gathered-pca-results.html"><i class="fa fa-check"></i><b>12</b> Visualize gathered PCA results</a></li>
 <li class="chapter" data-level="13" data-path="export-your-computation-results.html"><a href="export-your-computation-results.html"><i class="fa fa-check"></i><b>13</b> Export your computation results</a></li>
 <li class="chapter" data-level="14" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>14</b> Next steps</a></li>
 </ul>
@@ -111,31 +111,34 @@
 
             <section class="normal" id="section-">
 <div id="multi-group-pairwise-visualisation" class="section level1">
-<h1><span class="header-section-number">Chapter 12</span> Multi-group pairwise visualisation</h1>
-<p>In this section you create a multi-group pairwise visual of the PCA calculation.</p>
+<h1><span class="header-section-number">Chapter 8</span> Multi-group pairwise visualisation</h1>
+<p>In this section you create a multi-group pairwise visual of the raw data.</p>
 <p>This technique puts the same factor (<code>variable</code>) on the row and column zone.</p>
 <p>The resulting view is a powerful tool for data visualization.</p>
 <p><br />
 </p>
 <p><strong>Add a data step</strong></p>
 <p>From the workflow builder screen.</p>
-<p>Click on the <code>PCA</code> data step</p>
+<p>Click on the <code>Table</code> data step</p>
 <p>Select <code>Add</code></p>
 <p>Choose <code>Data step</code></p>
 <p>The projection screen will open.</p>
-<p>Clear the projection grid by clicking <code>x</code> on the zones.</p>
 <p>Drag and drop the following factors into the grid…</p>
 <p><br />
 </p>
 <p><code>measurement</code> to <strong>Y-Axis</strong><br />
 <code>variable</code> to <strong>column</strong><br />
 <code>variable</code> to <strong>row</strong><br />
-<code>index</code> to <strong>labels</strong><br />
+<code>observation</code> to <strong>labels</strong><br />
+<code>Color</code> to <strong>colors</strong><br />
 </p>
 <p><br />
 </p>
 <p>Re-size the projection by dragging the grid lines tighter.</p>
-<p>You have now created a pairwise projection of the <code>variable</code> factor.</p>
+<p><br />
+</p>
+<p>You have now visualized a multi-group pairwise projection.</p>
+<p>The crab characteristics are compared to each other and the suspected species (color) are split in the cells for comparison.</p>
 <p><br />
 </p>
 <center>
@@ -143,12 +146,14 @@
 </center>
 <p><br />
 </p>
-<p><strong>Convert to Multi-Group pairwise</strong></p>
+<p>Remember to return to the Workflow Builder and rename the step to “Multi Pairwise”</p>
+<p>You can drag it into position to make it more view-able.</p>
+<p><br />
+<strong>Further split the Groups</strong></p>
 <p>Drag and drop these factors.</p>
 <p><br />
 </p>
-<p><code>sp</code> to <strong>column</strong><br />
-<code>sex</code> to <strong>colors</strong><br />
+<p><code>sex</code> to <strong>column</strong><br />
 </p>
 <p><br />
 </p>
@@ -157,23 +162,10 @@
 </center>
 <p><br />
 </p>
-<p>You have now visualized a multi-group pairwise projection.</p>
+<p>You have now sub-divided your multi-group comparison by sex.</p>
 <p><br />
 </p>
-<p>Remember to return to the Workflow Builder and rename the step to “Multi Pairwise”</p>
-<p>You can drag it into position to make it more view-able.</p>
-<p><br />
-</p>
-<center>
-<img src="images/1203_workflow_multi_pairwise.png">
-</center>
-<p><br />
-</p>
-<p><br />
-</p>
-<p><br />
-</p>
-<p><strong>Next…</strong> make the results of a computation exportable.</p>
+<p><strong>Next…</strong> make a PCA calculation of the data.</p>
 
 </div>
             </section>
@@ -181,8 +173,8 @@
           </div>
         </div>
       </div>
-<a href="visualize-gathered-pca-results.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="export-your-computation-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-projection-and-visualisation-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="add-the-pca-operator.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
