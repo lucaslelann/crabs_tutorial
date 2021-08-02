@@ -71,7 +71,7 @@ The following actions can be performed on a step from the long menu.
 Action|Description
 ------|---
 __Reset__ |Clears any calculations performed on the data.
-__Edit__|Takes you to the projection page of the step.
+__Open__|Takes you to the projection page of the step.
 __Rename__|Change the step name to something more descriptive.
 __Remove__|Delete this step.
 __Duplicate__|Copy the step to make a differant visualisation.
